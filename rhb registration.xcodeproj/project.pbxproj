@@ -1,0 +1,1112 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F14D0222902135727939B64 /* Pods_rhb_registrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A2D2AFBC107D533FD46F1D /* Pods_rhb_registrationTests.framework */; };
+		221FDE8E9D25580A1A20A4AD /* Pods_rhb_registrationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5949E0510C1DECB6F701332C /* Pods_rhb_registrationUITests.framework */; };
+		4E5675B220D92B4000115457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675B120D92B4000115457 /* AppDelegate.swift */; };
+		4E5675B420D92B4000115457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675B320D92B4000115457 /* ViewController.swift */; };
+		4E5675B920D92B4100115457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5675B820D92B4100115457 /* Assets.xcassets */; };
+		4E5675BC20D92B4100115457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E5675BA20D92B4100115457 /* LaunchScreen.storyboard */; };
+		4E5675C720D92B4100115457 /* rhb_registrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675C620D92B4100115457 /* rhb_registrationTests.swift */; };
+		4E5675D220D92B4100115457 /* rhb_registrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675D120D92B4100115457 /* rhb_registrationUITests.swift */; };
+		4E5675F020D92C1F00115457 /* RegisterInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E5675E920D92C1F00115457 /* RegisterInfoViewController.xib */; };
+		4E5675F120D92C1F00115457 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E5675EB20D92C1F00115457 /* LoginViewController.xib */; };
+		4E5675F220D92C1F00115457 /* PreRegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E5675ED20D92C1F00115457 /* PreRegistrationViewController.xib */; };
+		4E5675F320D92C1F00115457 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E5675EF20D92C1F00115457 /* SplashViewController.xib */; };
+		4E5675F520D92CAF00115457 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675F420D92CAF00115457 /* SplashViewController.swift */; };
+		4E5675F720D92D7000115457 /* RegisterInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675F620D92D7000115457 /* RegisterInfoViewController.swift */; };
+		4E5675F920D92D8D00115457 /* PreRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675F820D92D8D00115457 /* PreRegistrationViewController.swift */; };
+		4E5675FB20D92DA300115457 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675FA20D92DA300115457 /* LoginViewController.swift */; };
+		4E5675FD20D92E0E00115457 /* RegisterNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675FC20D92E0E00115457 /* RegisterNavigationViewController.swift */; };
+		4E63BAFC210C1A40002239E5 /* FormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E63BAFB210C1A40002239E5 /* FormData.swift */; };
+		4E63BAFE210CB1D5002239E5 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E63BAFD210CB1D5002239E5 /* VideoHelper.swift */; };
+		4E6A414F20FF631500D9B2DE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A414D20FF631400D9B2DE /* CustomButton.swift */; };
+		4E6A415120FF64B600D9B2DE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A415020FF64B600D9B2DE /* Colors.swift */; };
+		4E6A415320FF64E000D9B2DE /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A415220FF64E000D9B2DE /* UIColorExtension.swift */; };
+		4E6A415520FF671B00D9B2DE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A415420FF671B00D9B2DE /* CustomView.swift */; };
+		4E6A415920FF696400D9B2DE /* RegistrationCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A415720FF696400D9B2DE /* RegistrationCompleteViewController.swift */; };
+		4E6A415E20FF6E4300D9B2DE /* RegistrationFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A415C20FF6E4300D9B2DE /* RegistrationFormViewController.swift */; };
+		4E6A415F20FF6E4300D9B2DE /* RegistrationFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E6A415D20FF6E4300D9B2DE /* RegistrationFormViewController.xib */; };
+		4E6A416320FF9D0900D9B2DE /* PersonalnfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A416120FF9D0900D9B2DE /* PersonalnfoViewController.swift */; };
+		4E6A416420FF9D0900D9B2DE /* PersonalnfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E6A416220FF9D0900D9B2DE /* PersonalnfoViewController.xib */; };
+		4E6A416820FF9E8800D9B2DE /* WorkInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A416620FF9E8800D9B2DE /* WorkInfoViewController.swift */; };
+		4E6A416920FF9E8800D9B2DE /* WorkInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E6A416720FF9E8800D9B2DE /* WorkInfoViewController.xib */; };
+		4E6A416D20FF9EE200D9B2DE /* ProfileRiskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A416B20FF9EE200D9B2DE /* ProfileRiskViewController.swift */; };
+		4E6A416E20FF9EE200D9B2DE /* ProfileRiskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E6A416C20FF9EE200D9B2DE /* ProfileRiskViewController.xib */; };
+		4E6A417220FF9F2600D9B2DE /* RegistrationSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A417020FF9F2600D9B2DE /* RegistrationSummaryViewController.swift */; };
+		4E6A417320FF9F2600D9B2DE /* RegistrationSummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E6A417120FF9F2600D9B2DE /* RegistrationSummaryViewController.xib */; };
+		4E710A832122841100905729 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E710A822122841100905729 /* FileService.swift */; };
+		4E822E1D210366EC0087E942 /* SignatureFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E822E1B210366EC0087E942 /* SignatureFormViewController.swift */; };
+		4E822E1E210366EC0087E942 /* SignatureFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E822E1C210366EC0087E942 /* SignatureFormViewController.xib */; };
+		4E822E2021036EC60087E942 /* RegistrationCompleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E822E1F21036EC60087E942 /* RegistrationCompleteViewController.xib */; };
+		4E822E22210374160087E942 /* YPDrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E822E21210374160087E942 /* YPDrawSignatureView.swift */; };
+		4E822E26210430380087E942 /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E822E25210430380087E942 /* CameraHandler.swift */; };
+		4E822E2A210434320087E942 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E822E28210434320087E942 /* Constants.swift */; };
+		4E822E2B210434320087E942 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E822E29210434320087E942 /* APIService.swift */; };
+		4E86046D210980F700019F77 /* Religion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86046C210980F700019F77 /* Religion.swift */; };
+		4E86046F2109875E00019F77 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86046E2109875E00019F77 /* Bank.swift */; };
+		4E8604712109880A00019F77 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8604702109880A00019F77 /* Country.swift */; };
+		4E860473210988AD00019F77 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E860472210988AD00019F77 /* City.swift */; };
+		4E8604752109892500019F77 /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8604742109892500019F77 /* Province.swift */; };
+		4E860477210989A200019F77 /* Invest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E860476210989A200019F77 /* Invest.swift */; };
+		4E86047921098A0A00019F77 /* Jabatan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86047821098A0A00019F77 /* Jabatan.swift */; };
+		4E86047B21098A5F00019F77 /* KenalDari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86047A21098A5F00019F77 /* KenalDari.swift */; };
+		4E86047D21098AA700019F77 /* KepemilikanRumah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86047C21098AA700019F77 /* KepemilikanRumah.swift */; };
+		4E86047F21098AF100019F77 /* Marital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86047E21098AF100019F77 /* Marital.swift */; };
+		4E86048121098B3700019F77 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86048021098B3700019F77 /* Job.swift */; };
+		4E86048321098B7E00019F77 /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86048221098B7E00019F77 /* Income.swift */; };
+		4E86048521098BB500019F77 /* Outcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86048421098BB500019F77 /* Outcome.swift */; };
+		4E86048721098C0C00019F77 /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86048621098C0C00019F77 /* Relationship.swift */; };
+		4E86048921098C7500019F77 /* SourceFunds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86048821098C7500019F77 /* SourceFunds.swift */; };
+		4E86048B2109BAB600019F77 /* BusinessType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86048A2109BAB600019F77 /* BusinessType.swift */; };
+		4E86048F2109CD4E00019F77 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86048D2109CD4E00019F77 /* PickerViewController.swift */; };
+		4E8604902109CD4E00019F77 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E86048E2109CD4E00019F77 /* PickerViewController.xib */; };
+		4E8604922109D4CB00019F77 /* PickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8604912109D4CB00019F77 /* PickerModel.swift */; };
+		94D4E5AF214CB18600DB15BB /* MLOLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4E5AE214CB18500DB15BB /* MLOLabel.swift */; };
+		94D4E5B2214CCCF600DB15BB /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4E5B1214CCCF600DB15BB /* UIViewController+NavigationBar.swift */; };
+		94D4E5B6214D7ECC00DB15BB /* RHBPreRegisterSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4E5B5214D7ECC00DB15BB /* RHBPreRegisterSegmentView.swift */; };
+		94D4E5B8214D81D100DB15BB /* RHBPreRegisterSegmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94D4E5B7214D81D100DB15BB /* RHBPreRegisterSegmentView.xib */; };
+		94D4E5BA214EB26900DB15BB /* RhbUnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4E5B9214EB26900DB15BB /* RhbUnderlinedTextField.swift */; };
+		94D4E5BF214EC6D200DB15BB /* RhbLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4E5BD214EC6D200DB15BB /* RhbLoginViewController.swift */; };
+		94D4E5C0214EC6D200DB15BB /* RhbLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94D4E5BE214EC6D200DB15BB /* RhbLoginViewController.xib */; };
+		94D4E5C2214ECD3F00DB15BB /* RhbCheckBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4E5C1214ECD3F00DB15BB /* RhbCheckBoxButton.swift */; };
+		DAB647E98335F59112C7B495 /* Pods_rhb_registration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA43CD0007CF5F2425CF21D3 /* Pods_rhb_registration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E5675C320D92B4100115457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E5675A620D92B4000115457 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E5675AD20D92B4000115457;
+			remoteInfo = "rhb registration";
+		};
+		4E5675CE20D92B4100115457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E5675A620D92B4000115457 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E5675AD20D92B4000115457;
+			remoteInfo = "rhb registration";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12CE8AC5A04265B58AF3268D /* Pods-rhb registration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rhb registration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rhb registration/Pods-rhb registration.debug.xcconfig"; sourceTree = "<group>"; };
+		4E5675AE20D92B4000115457 /* rhb registration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rhb registration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E5675B120D92B4000115457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E5675B320D92B4000115457 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E5675B820D92B4100115457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E5675BB20D92B4100115457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E5675BD20D92B4100115457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E5675C220D92B4100115457 /* rhb registrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rhb registrationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E5675C620D92B4100115457 /* rhb_registrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rhb_registrationTests.swift; sourceTree = "<group>"; };
+		4E5675C820D92B4100115457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E5675CD20D92B4100115457 /* rhb registrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rhb registrationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E5675D120D92B4100115457 /* rhb_registrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rhb_registrationUITests.swift; sourceTree = "<group>"; };
+		4E5675D320D92B4100115457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E5675E920D92C1F00115457 /* RegisterInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterInfoViewController.xib; sourceTree = "<group>"; };
+		4E5675EB20D92C1F00115457 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		4E5675ED20D92C1F00115457 /* PreRegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreRegistrationViewController.xib; sourceTree = "<group>"; };
+		4E5675EF20D92C1F00115457 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		4E5675F420D92CAF00115457 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		4E5675F620D92D7000115457 /* RegisterInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInfoViewController.swift; sourceTree = "<group>"; };
+		4E5675F820D92D8D00115457 /* PreRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreRegistrationViewController.swift; sourceTree = "<group>"; };
+		4E5675FA20D92DA300115457 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4E5675FC20D92E0E00115457 /* RegisterNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNavigationViewController.swift; sourceTree = "<group>"; };
+		4E63BAFB210C1A40002239E5 /* FormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormData.swift; sourceTree = "<group>"; };
+		4E63BAFD210CB1D5002239E5 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
+		4E6A414D20FF631400D9B2DE /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		4E6A415020FF64B600D9B2DE /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		4E6A415220FF64E000D9B2DE /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		4E6A415420FF671B00D9B2DE /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		4E6A415720FF696400D9B2DE /* RegistrationCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCompleteViewController.swift; sourceTree = "<group>"; };
+		4E6A415C20FF6E4300D9B2DE /* RegistrationFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormViewController.swift; sourceTree = "<group>"; };
+		4E6A415D20FF6E4300D9B2DE /* RegistrationFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationFormViewController.xib; sourceTree = "<group>"; };
+		4E6A416120FF9D0900D9B2DE /* PersonalnfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalnfoViewController.swift; sourceTree = "<group>"; };
+		4E6A416220FF9D0900D9B2DE /* PersonalnfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalnfoViewController.xib; sourceTree = "<group>"; };
+		4E6A416620FF9E8800D9B2DE /* WorkInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkInfoViewController.swift; sourceTree = "<group>"; };
+		4E6A416720FF9E8800D9B2DE /* WorkInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkInfoViewController.xib; sourceTree = "<group>"; };
+		4E6A416B20FF9EE200D9B2DE /* ProfileRiskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRiskViewController.swift; sourceTree = "<group>"; };
+		4E6A416C20FF9EE200D9B2DE /* ProfileRiskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileRiskViewController.xib; sourceTree = "<group>"; };
+		4E6A417020FF9F2600D9B2DE /* RegistrationSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSummaryViewController.swift; sourceTree = "<group>"; };
+		4E6A417120FF9F2600D9B2DE /* RegistrationSummaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationSummaryViewController.xib; sourceTree = "<group>"; };
+		4E710A822122841100905729 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		4E822E1B210366EC0087E942 /* SignatureFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureFormViewController.swift; sourceTree = "<group>"; };
+		4E822E1C210366EC0087E942 /* SignatureFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignatureFormViewController.xib; sourceTree = "<group>"; };
+		4E822E1F21036EC60087E942 /* RegistrationCompleteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationCompleteViewController.xib; sourceTree = "<group>"; };
+		4E822E21210374160087E942 /* YPDrawSignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPDrawSignatureView.swift; sourceTree = "<group>"; };
+		4E822E25210430380087E942 /* CameraHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHandler.swift; sourceTree = "<group>"; };
+		4E822E28210434320087E942 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4E822E29210434320087E942 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		4E86046C210980F700019F77 /* Religion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Religion.swift; sourceTree = "<group>"; };
+		4E86046E2109875E00019F77 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		4E8604702109880A00019F77 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		4E860472210988AD00019F77 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		4E8604742109892500019F77 /* Province.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
+		4E860476210989A200019F77 /* Invest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invest.swift; sourceTree = "<group>"; };
+		4E86047821098A0A00019F77 /* Jabatan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jabatan.swift; sourceTree = "<group>"; };
+		4E86047A21098A5F00019F77 /* KenalDari.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenalDari.swift; sourceTree = "<group>"; };
+		4E86047C21098AA700019F77 /* KepemilikanRumah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KepemilikanRumah.swift; sourceTree = "<group>"; };
+		4E86047E21098AF100019F77 /* Marital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marital.swift; sourceTree = "<group>"; };
+		4E86048021098B3700019F77 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		4E86048221098B7E00019F77 /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
+		4E86048421098BB500019F77 /* Outcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outcome.swift; sourceTree = "<group>"; };
+		4E86048621098C0C00019F77 /* Relationship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
+		4E86048821098C7500019F77 /* SourceFunds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceFunds.swift; sourceTree = "<group>"; };
+		4E86048A2109BAB600019F77 /* BusinessType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessType.swift; sourceTree = "<group>"; };
+		4E86048D2109CD4E00019F77 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		4E86048E2109CD4E00019F77 /* PickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
+		4E8604912109D4CB00019F77 /* PickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerModel.swift; sourceTree = "<group>"; };
+		57A2D2AFBC107D533FD46F1D /* Pods_rhb_registrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rhb_registrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5949E0510C1DECB6F701332C /* Pods_rhb_registrationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rhb_registrationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79297CEBF7C22294F13CD6EE /* Pods-rhb registrationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rhb registrationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rhb registrationUITests/Pods-rhb registrationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		94D4E5AE214CB18500DB15BB /* MLOLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLOLabel.swift; sourceTree = "<group>"; };
+		94D4E5B1214CCCF600DB15BB /* UIViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBar.swift"; sourceTree = "<group>"; };
+		94D4E5B5214D7ECC00DB15BB /* RHBPreRegisterSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHBPreRegisterSegmentView.swift; sourceTree = "<group>"; };
+		94D4E5B7214D81D100DB15BB /* RHBPreRegisterSegmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHBPreRegisterSegmentView.xib; sourceTree = "<group>"; };
+		94D4E5B9214EB26900DB15BB /* RhbUnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhbUnderlinedTextField.swift; sourceTree = "<group>"; };
+		94D4E5BD214EC6D200DB15BB /* RhbLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhbLoginViewController.swift; sourceTree = "<group>"; };
+		94D4E5BE214EC6D200DB15BB /* RhbLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RhbLoginViewController.xib; sourceTree = "<group>"; };
+		94D4E5C1214ECD3F00DB15BB /* RhbCheckBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhbCheckBoxButton.swift; sourceTree = "<group>"; };
+		A7A42B9A0DA1295B25F33698 /* Pods-rhb registration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rhb registration.release.xcconfig"; path = "Pods/Target Support Files/Pods-rhb registration/Pods-rhb registration.release.xcconfig"; sourceTree = "<group>"; };
+		AA43CD0007CF5F2425CF21D3 /* Pods_rhb_registration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rhb_registration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7FA2BB1DDBE6E4D0023003D /* Pods-rhb registrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rhb registrationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rhb registrationTests/Pods-rhb registrationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB60F1A83BE310EC91C3C9FC /* Pods-rhb registrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rhb registrationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-rhb registrationTests/Pods-rhb registrationTests.release.xcconfig"; sourceTree = "<group>"; };
+		FF6FA7D530CD92FE133EA3A1 /* Pods-rhb registrationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rhb registrationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-rhb registrationUITests/Pods-rhb registrationUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E5675AB20D92B4000115457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB647E98335F59112C7B495 /* Pods_rhb_registration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E5675BF20D92B4100115457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F14D0222902135727939B64 /* Pods_rhb_registrationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E5675CA20D92B4100115457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221FDE8E9D25580A1A20A4AD /* Pods_rhb_registrationUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E5675A520D92B4000115457 = {
+			isa = PBXGroup;
+			children = (
+				4E5675B020D92B4000115457 /* rhb registration */,
+				4E5675C520D92B4100115457 /* rhb registrationTests */,
+				4E5675D020D92B4100115457 /* rhb registrationUITests */,
+				4E5675AF20D92B4000115457 /* Products */,
+				5363D2FC21E6F26851508543 /* Pods */,
+				BE5E4A280DDCE31781ED341E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4E5675AF20D92B4000115457 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E5675AE20D92B4000115457 /* rhb registration.app */,
+				4E5675C220D92B4100115457 /* rhb registrationTests.xctest */,
+				4E5675CD20D92B4100115457 /* rhb registrationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E5675B020D92B4000115457 /* rhb registration */ = {
+			isa = PBXGroup;
+			children = (
+				4E86046B210980BC00019F77 /* Models */,
+				4E822E27210434320087E942 /* Services */,
+				4E6A414A20FF631400D9B2DE /* Helpers */,
+				4E5675DF20D92B9C00115457 /* Controllers */,
+				94D4E5B3214D7E2A00DB15BB /* Custom Views */,
+				4E5675B120D92B4000115457 /* AppDelegate.swift */,
+				4E5675B320D92B4000115457 /* ViewController.swift */,
+				4E5675B820D92B4100115457 /* Assets.xcassets */,
+				4E5675BA20D92B4100115457 /* LaunchScreen.storyboard */,
+				4E5675BD20D92B4100115457 /* Info.plist */,
+			);
+			path = "rhb registration";
+			sourceTree = "<group>";
+		};
+		4E5675C520D92B4100115457 /* rhb registrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E5675C620D92B4100115457 /* rhb_registrationTests.swift */,
+				4E5675C820D92B4100115457 /* Info.plist */,
+			);
+			path = "rhb registrationTests";
+			sourceTree = "<group>";
+		};
+		4E5675D020D92B4100115457 /* rhb registrationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4E5675D120D92B4100115457 /* rhb_registrationUITests.swift */,
+				4E5675D320D92B4100115457 /* Info.plist */,
+			);
+			path = "rhb registrationUITests";
+			sourceTree = "<group>";
+		};
+		4E5675DF20D92B9C00115457 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E86048C2109CD1F00019F77 /* Picker View */,
+				4E822E1A210366CC0087E942 /* Signature Form */,
+				4E6A416F20FF9F0E00D9B2DE /* Registration Summary */,
+				4E6A416A20FF9EC600D9B2DE /* Profile Resiko */,
+				4E6A416520FF9E6D00D9B2DE /* Work Info */,
+				4E6A416020FF9CEA00D9B2DE /* Registration Personal Info */,
+				4E6A415B20FF6E2C00D9B2DE /* Registration Form */,
+				4E6A415620FF694600D9B2DE /* Registration Complete */,
+				4E5675EA20D92C1F00115457 /* Login Screen */,
+				4E5675EC20D92C1F00115457 /* Pra Registration Screen */,
+				4E5675E820D92C1F00115457 /* Register Screen */,
+				4E5675EE20D92C1F00115457 /* Splash Screen */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4E5675E820D92C1F00115457 /* Register Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4E5675E920D92C1F00115457 /* RegisterInfoViewController.xib */,
+				4E5675F620D92D7000115457 /* RegisterInfoViewController.swift */,
+				4E5675FC20D92E0E00115457 /* RegisterNavigationViewController.swift */,
+			);
+			path = "Register Screen";
+			sourceTree = "<group>";
+		};
+		4E5675EA20D92C1F00115457 /* Login Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4E5675EB20D92C1F00115457 /* LoginViewController.xib */,
+				4E5675FA20D92DA300115457 /* LoginViewController.swift */,
+				94D4E5BD214EC6D200DB15BB /* RhbLoginViewController.swift */,
+				94D4E5BE214EC6D200DB15BB /* RhbLoginViewController.xib */,
+			);
+			path = "Login Screen";
+			sourceTree = "<group>";
+		};
+		4E5675EC20D92C1F00115457 /* Pra Registration Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4E5675ED20D92C1F00115457 /* PreRegistrationViewController.xib */,
+				4E5675F820D92D8D00115457 /* PreRegistrationViewController.swift */,
+			);
+			path = "Pra Registration Screen";
+			sourceTree = "<group>";
+		};
+		4E5675EE20D92C1F00115457 /* Splash Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4E5675EF20D92C1F00115457 /* SplashViewController.xib */,
+				4E5675F420D92CAF00115457 /* SplashViewController.swift */,
+			);
+			path = "Splash Screen";
+			sourceTree = "<group>";
+		};
+		4E6A414A20FF631400D9B2DE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				94D4E5B0214CCCB800DB15BB /* Extensions */,
+				4E6A415020FF64B600D9B2DE /* Colors.swift */,
+				4E822E21210374160087E942 /* YPDrawSignatureView.swift */,
+				4E822E25210430380087E942 /* CameraHandler.swift */,
+				4E63BAFD210CB1D5002239E5 /* VideoHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4E6A414B20FF631400D9B2DE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				94D4E5B9214EB26900DB15BB /* RhbUnderlinedTextField.swift */,
+				94D4E5C1214ECD3F00DB15BB /* RhbCheckBoxButton.swift */,
+				94D4E5AE214CB18500DB15BB /* MLOLabel.swift */,
+				4E6A415420FF671B00D9B2DE /* CustomView.swift */,
+				4E6A414D20FF631400D9B2DE /* CustomButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4E6A415620FF694600D9B2DE /* Registration Complete */ = {
+			isa = PBXGroup;
+			children = (
+				4E822E1F21036EC60087E942 /* RegistrationCompleteViewController.xib */,
+				4E6A415720FF696400D9B2DE /* RegistrationCompleteViewController.swift */,
+			);
+			path = "Registration Complete";
+			sourceTree = "<group>";
+		};
+		4E6A415B20FF6E2C00D9B2DE /* Registration Form */ = {
+			isa = PBXGroup;
+			children = (
+				4E6A415C20FF6E4300D9B2DE /* RegistrationFormViewController.swift */,
+				4E6A415D20FF6E4300D9B2DE /* RegistrationFormViewController.xib */,
+			);
+			path = "Registration Form";
+			sourceTree = "<group>";
+		};
+		4E6A416020FF9CEA00D9B2DE /* Registration Personal Info */ = {
+			isa = PBXGroup;
+			children = (
+				4E6A416120FF9D0900D9B2DE /* PersonalnfoViewController.swift */,
+				4E6A416220FF9D0900D9B2DE /* PersonalnfoViewController.xib */,
+			);
+			path = "Registration Personal Info";
+			sourceTree = "<group>";
+		};
+		4E6A416520FF9E6D00D9B2DE /* Work Info */ = {
+			isa = PBXGroup;
+			children = (
+				4E6A416620FF9E8800D9B2DE /* WorkInfoViewController.swift */,
+				4E6A416720FF9E8800D9B2DE /* WorkInfoViewController.xib */,
+			);
+			path = "Work Info";
+			sourceTree = "<group>";
+		};
+		4E6A416A20FF9EC600D9B2DE /* Profile Resiko */ = {
+			isa = PBXGroup;
+			children = (
+				4E6A416B20FF9EE200D9B2DE /* ProfileRiskViewController.swift */,
+				4E6A416C20FF9EE200D9B2DE /* ProfileRiskViewController.xib */,
+			);
+			path = "Profile Resiko";
+			sourceTree = "<group>";
+		};
+		4E6A416F20FF9F0E00D9B2DE /* Registration Summary */ = {
+			isa = PBXGroup;
+			children = (
+				4E6A417020FF9F2600D9B2DE /* RegistrationSummaryViewController.swift */,
+				4E6A417120FF9F2600D9B2DE /* RegistrationSummaryViewController.xib */,
+			);
+			path = "Registration Summary";
+			sourceTree = "<group>";
+		};
+		4E822E1A210366CC0087E942 /* Signature Form */ = {
+			isa = PBXGroup;
+			children = (
+				4E822E1B210366EC0087E942 /* SignatureFormViewController.swift */,
+				4E822E1C210366EC0087E942 /* SignatureFormViewController.xib */,
+			);
+			path = "Signature Form";
+			sourceTree = "<group>";
+		};
+		4E822E27210434320087E942 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4E822E28210434320087E942 /* Constants.swift */,
+				4E822E29210434320087E942 /* APIService.swift */,
+				4E710A822122841100905729 /* FileService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4E86046B210980BC00019F77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4E86046C210980F700019F77 /* Religion.swift */,
+				4E86046E2109875E00019F77 /* Bank.swift */,
+				4E8604702109880A00019F77 /* Country.swift */,
+				4E860472210988AD00019F77 /* City.swift */,
+				4E8604742109892500019F77 /* Province.swift */,
+				4E860476210989A200019F77 /* Invest.swift */,
+				4E86047821098A0A00019F77 /* Jabatan.swift */,
+				4E86047A21098A5F00019F77 /* KenalDari.swift */,
+				4E86047C21098AA700019F77 /* KepemilikanRumah.swift */,
+				4E86047E21098AF100019F77 /* Marital.swift */,
+				4E86048021098B3700019F77 /* Job.swift */,
+				4E86048221098B7E00019F77 /* Income.swift */,
+				4E86048421098BB500019F77 /* Outcome.swift */,
+				4E86048621098C0C00019F77 /* Relationship.swift */,
+				4E86048821098C7500019F77 /* SourceFunds.swift */,
+				4E86048A2109BAB600019F77 /* BusinessType.swift */,
+				4E8604912109D4CB00019F77 /* PickerModel.swift */,
+				4E63BAFB210C1A40002239E5 /* FormData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4E86048C2109CD1F00019F77 /* Picker View */ = {
+			isa = PBXGroup;
+			children = (
+				4E86048D2109CD4E00019F77 /* PickerViewController.swift */,
+				4E86048E2109CD4E00019F77 /* PickerViewController.xib */,
+			);
+			path = "Picker View";
+			sourceTree = "<group>";
+		};
+		5363D2FC21E6F26851508543 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12CE8AC5A04265B58AF3268D /* Pods-rhb registration.debug.xcconfig */,
+				A7A42B9A0DA1295B25F33698 /* Pods-rhb registration.release.xcconfig */,
+				B7FA2BB1DDBE6E4D0023003D /* Pods-rhb registrationTests.debug.xcconfig */,
+				BB60F1A83BE310EC91C3C9FC /* Pods-rhb registrationTests.release.xcconfig */,
+				79297CEBF7C22294F13CD6EE /* Pods-rhb registrationUITests.debug.xcconfig */,
+				FF6FA7D530CD92FE133EA3A1 /* Pods-rhb registrationUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		94D4E5B0214CCCB800DB15BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4E6A415220FF64E000D9B2DE /* UIColorExtension.swift */,
+				94D4E5B1214CCCF600DB15BB /* UIViewController+NavigationBar.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		94D4E5B3214D7E2A00DB15BB /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				94D4E5B4214D7E4F00DB15BB /* Custom Controls */,
+				4E6A414B20FF631400D9B2DE /* Components */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		94D4E5B4214D7E4F00DB15BB /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				94D4E5B5214D7ECC00DB15BB /* RHBPreRegisterSegmentView.swift */,
+				94D4E5B7214D81D100DB15BB /* RHBPreRegisterSegmentView.xib */,
+			);
+			path = "Custom Controls";
+			sourceTree = "<group>";
+		};
+		BE5E4A280DDCE31781ED341E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA43CD0007CF5F2425CF21D3 /* Pods_rhb_registration.framework */,
+				57A2D2AFBC107D533FD46F1D /* Pods_rhb_registrationTests.framework */,
+				5949E0510C1DECB6F701332C /* Pods_rhb_registrationUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E5675AD20D92B4000115457 /* rhb registration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E5675D620D92B4100115457 /* Build configuration list for PBXNativeTarget "rhb registration" */;
+			buildPhases = (
+				25CB2DF51080BFEFB10D0E36 /* [CP] Check Pods Manifest.lock */,
+				4E5675AA20D92B4000115457 /* Sources */,
+				4E5675AB20D92B4000115457 /* Frameworks */,
+				4E5675AC20D92B4000115457 /* Resources */,
+				425292629577D62D56FE2180 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "rhb registration";
+			productName = "rhb registration";
+			productReference = 4E5675AE20D92B4000115457 /* rhb registration.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E5675C120D92B4100115457 /* rhb registrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E5675D920D92B4100115457 /* Build configuration list for PBXNativeTarget "rhb registrationTests" */;
+			buildPhases = (
+				EAFCCB0CED7B8AEFB1AC6CF9 /* [CP] Check Pods Manifest.lock */,
+				4E5675BE20D92B4100115457 /* Sources */,
+				4E5675BF20D92B4100115457 /* Frameworks */,
+				4E5675C020D92B4100115457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E5675C420D92B4100115457 /* PBXTargetDependency */,
+			);
+			name = "rhb registrationTests";
+			productName = "rhb registrationTests";
+			productReference = 4E5675C220D92B4100115457 /* rhb registrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4E5675CC20D92B4100115457 /* rhb registrationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E5675DC20D92B4100115457 /* Build configuration list for PBXNativeTarget "rhb registrationUITests" */;
+			buildPhases = (
+				497BDC16E64BEFCEE6F69E04 /* [CP] Check Pods Manifest.lock */,
+				4E5675C920D92B4100115457 /* Sources */,
+				4E5675CA20D92B4100115457 /* Frameworks */,
+				4E5675CB20D92B4100115457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E5675CF20D92B4100115457 /* PBXTargetDependency */,
+			);
+			name = "rhb registrationUITests";
+			productName = "rhb registrationUITests";
+			productReference = 4E5675CD20D92B4100115457 /* rhb registrationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E5675A620D92B4000115457 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "RHB TradeSmart";
+				TargetAttributes = {
+					4E5675AD20D92B4000115457 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					4E5675C120D92B4100115457 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 4E5675AD20D92B4000115457;
+					};
+					4E5675CC20D92B4100115457 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 4E5675AD20D92B4000115457;
+					};
+				};
+			};
+			buildConfigurationList = 4E5675A920D92B4000115457 /* Build configuration list for PBXProject "rhb registration" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E5675A520D92B4000115457;
+			productRefGroup = 4E5675AF20D92B4000115457 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E5675AD20D92B4000115457 /* rhb registration */,
+				4E5675C120D92B4100115457 /* rhb registrationTests */,
+				4E5675CC20D92B4100115457 /* rhb registrationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E5675AC20D92B4000115457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D4E5B8214D81D100DB15BB /* RHBPreRegisterSegmentView.xib in Resources */,
+				4E6A416E20FF9EE200D9B2DE /* ProfileRiskViewController.xib in Resources */,
+				4E5675F120D92C1F00115457 /* LoginViewController.xib in Resources */,
+				4E822E1E210366EC0087E942 /* SignatureFormViewController.xib in Resources */,
+				4E6A416420FF9D0900D9B2DE /* PersonalnfoViewController.xib in Resources */,
+				4E5675BC20D92B4100115457 /* LaunchScreen.storyboard in Resources */,
+				4E822E2021036EC60087E942 /* RegistrationCompleteViewController.xib in Resources */,
+				4E5675B920D92B4100115457 /* Assets.xcassets in Resources */,
+				4E5675F320D92C1F00115457 /* SplashViewController.xib in Resources */,
+				4E6A415F20FF6E4300D9B2DE /* RegistrationFormViewController.xib in Resources */,
+				4E6A416920FF9E8800D9B2DE /* WorkInfoViewController.xib in Resources */,
+				4E5675F020D92C1F00115457 /* RegisterInfoViewController.xib in Resources */,
+				4E6A417320FF9F2600D9B2DE /* RegistrationSummaryViewController.xib in Resources */,
+				4E8604902109CD4E00019F77 /* PickerViewController.xib in Resources */,
+				4E5675F220D92C1F00115457 /* PreRegistrationViewController.xib in Resources */,
+				94D4E5C0214EC6D200DB15BB /* RhbLoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E5675C020D92B4100115457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E5675CB20D92B4100115457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25CB2DF51080BFEFB10D0E36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rhb registration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		425292629577D62D56FE2180 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-rhb registration/Pods-rhb registration-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/EVReflection/EVReflection.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EVReflection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rhb registration/Pods-rhb registration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		497BDC16E64BEFCEE6F69E04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rhb registrationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAFCCB0CED7B8AEFB1AC6CF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rhb registrationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E5675AA20D92B4000115457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E86048921098C7500019F77 /* SourceFunds.swift in Sources */,
+				4E86048321098B7E00019F77 /* Income.swift in Sources */,
+				4E5675FB20D92DA300115457 /* LoginViewController.swift in Sources */,
+				4E8604922109D4CB00019F77 /* PickerModel.swift in Sources */,
+				94D4E5B2214CCCF600DB15BB /* UIViewController+NavigationBar.swift in Sources */,
+				4E86048F2109CD4E00019F77 /* PickerViewController.swift in Sources */,
+				4E822E26210430380087E942 /* CameraHandler.swift in Sources */,
+				4E822E1D210366EC0087E942 /* SignatureFormViewController.swift in Sources */,
+				4E86047B21098A5F00019F77 /* KenalDari.swift in Sources */,
+				4E6A415120FF64B600D9B2DE /* Colors.swift in Sources */,
+				4E63BAFE210CB1D5002239E5 /* VideoHelper.swift in Sources */,
+				94D4E5BF214EC6D200DB15BB /* RhbLoginViewController.swift in Sources */,
+				4E822E2B210434320087E942 /* APIService.swift in Sources */,
+				4E6A414F20FF631500D9B2DE /* CustomButton.swift in Sources */,
+				4E86048121098B3700019F77 /* Job.swift in Sources */,
+				4E6A416D20FF9EE200D9B2DE /* ProfileRiskViewController.swift in Sources */,
+				4E5675F520D92CAF00115457 /* SplashViewController.swift in Sources */,
+				4E8604712109880A00019F77 /* Country.swift in Sources */,
+				4E5675F920D92D8D00115457 /* PreRegistrationViewController.swift in Sources */,
+				4E86046F2109875E00019F77 /* Bank.swift in Sources */,
+				4E5675B420D92B4000115457 /* ViewController.swift in Sources */,
+				4E8604752109892500019F77 /* Province.swift in Sources */,
+				94D4E5BA214EB26900DB15BB /* RhbUnderlinedTextField.swift in Sources */,
+				4E710A832122841100905729 /* FileService.swift in Sources */,
+				94D4E5B6214D7ECC00DB15BB /* RHBPreRegisterSegmentView.swift in Sources */,
+				94D4E5AF214CB18600DB15BB /* MLOLabel.swift in Sources */,
+				4E6A415E20FF6E4300D9B2DE /* RegistrationFormViewController.swift in Sources */,
+				4E6A415920FF696400D9B2DE /* RegistrationCompleteViewController.swift in Sources */,
+				4E86048B2109BAB600019F77 /* BusinessType.swift in Sources */,
+				4E822E2A210434320087E942 /* Constants.swift in Sources */,
+				4E63BAFC210C1A40002239E5 /* FormData.swift in Sources */,
+				4E86048721098C0C00019F77 /* Relationship.swift in Sources */,
+				94D4E5C2214ECD3F00DB15BB /* RhbCheckBoxButton.swift in Sources */,
+				4E6A416320FF9D0900D9B2DE /* PersonalnfoViewController.swift in Sources */,
+				4E86047F21098AF100019F77 /* Marital.swift in Sources */,
+				4E6A415520FF671B00D9B2DE /* CustomView.swift in Sources */,
+				4E86046D210980F700019F77 /* Religion.swift in Sources */,
+				4E5675FD20D92E0E00115457 /* RegisterNavigationViewController.swift in Sources */,
+				4E86047D21098AA700019F77 /* KepemilikanRumah.swift in Sources */,
+				4E860477210989A200019F77 /* Invest.swift in Sources */,
+				4E86048521098BB500019F77 /* Outcome.swift in Sources */,
+				4E86047921098A0A00019F77 /* Jabatan.swift in Sources */,
+				4E6A416820FF9E8800D9B2DE /* WorkInfoViewController.swift in Sources */,
+				4E6A415320FF64E000D9B2DE /* UIColorExtension.swift in Sources */,
+				4E822E22210374160087E942 /* YPDrawSignatureView.swift in Sources */,
+				4E5675F720D92D7000115457 /* RegisterInfoViewController.swift in Sources */,
+				4E5675B220D92B4000115457 /* AppDelegate.swift in Sources */,
+				4E860473210988AD00019F77 /* City.swift in Sources */,
+				4E6A417220FF9F2600D9B2DE /* RegistrationSummaryViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E5675BE20D92B4100115457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5675C720D92B4100115457 /* rhb_registrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E5675C920D92B4100115457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5675D220D92B4100115457 /* rhb_registrationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E5675C420D92B4100115457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E5675AD20D92B4000115457 /* rhb registration */;
+			targetProxy = 4E5675C320D92B4100115457 /* PBXContainerItemProxy */;
+		};
+		4E5675CF20D92B4100115457 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E5675AD20D92B4000115457 /* rhb registration */;
+			targetProxy = 4E5675CE20D92B4100115457 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E5675BA20D92B4100115457 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E5675BB20D92B4100115457 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E5675D420D92B4100115457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E5675D520D92B4100115457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E5675D720D92B4100115457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12CE8AC5A04265B58AF3268D /* Pods-rhb registration.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4BS5XU5DQ;
+				INFOPLIST_FILE = "rhb registration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rhb.rhb-registration";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4E5675D820D92B4100115457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7A42B9A0DA1295B25F33698 /* Pods-rhb registration.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4BS5XU5DQ;
+				INFOPLIST_FILE = "rhb registration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rhb.rhb-registration";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4E5675DA20D92B4100115457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7FA2BB1DDBE6E4D0023003D /* Pods-rhb registrationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4BS5XU5DQ;
+				INFOPLIST_FILE = "rhb registrationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buno.rhb-registrationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rhb registration.app/rhb registration";
+			};
+			name = Debug;
+		};
+		4E5675DB20D92B4100115457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB60F1A83BE310EC91C3C9FC /* Pods-rhb registrationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4BS5XU5DQ;
+				INFOPLIST_FILE = "rhb registrationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buno.rhb-registrationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rhb registration.app/rhb registration";
+			};
+			name = Release;
+		};
+		4E5675DD20D92B4100115457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79297CEBF7C22294F13CD6EE /* Pods-rhb registrationUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4BS5XU5DQ;
+				INFOPLIST_FILE = "rhb registrationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buno.rhb-registrationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "rhb registration";
+			};
+			name = Debug;
+		};
+		4E5675DE20D92B4100115457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF6FA7D530CD92FE133EA3A1 /* Pods-rhb registrationUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M4BS5XU5DQ;
+				INFOPLIST_FILE = "rhb registrationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buno.rhb-registrationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "rhb registration";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E5675A920D92B4000115457 /* Build configuration list for PBXProject "rhb registration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E5675D420D92B4100115457 /* Debug */,
+				4E5675D520D92B4100115457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E5675D620D92B4100115457 /* Build configuration list for PBXNativeTarget "rhb registration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E5675D720D92B4100115457 /* Debug */,
+				4E5675D820D92B4100115457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E5675D920D92B4100115457 /* Build configuration list for PBXNativeTarget "rhb registrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E5675DA20D92B4100115457 /* Debug */,
+				4E5675DB20D92B4100115457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E5675DC20D92B4100115457 /* Build configuration list for PBXNativeTarget "rhb registrationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E5675DD20D92B4100115457 /* Debug */,
+				4E5675DE20D92B4100115457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E5675A620D92B4000115457 /* Project object */;
+}
