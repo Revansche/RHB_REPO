@@ -422,7 +422,7 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
     
     // MARK: - Picker View
     func pickerViewDelegate(didSelectPickerView pickerView: UIPickerView, withData data: PickerModel, andMasterModel masterModel: MasterModel) {
-        switch pickerTrigger {
+        switch pickerTrigger! {
         case .state:
             provinceSelected = data.id
             formData.provinsi_identitas = data.title
@@ -448,10 +448,10 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
         case .rdibank:
             formData.bank_rdi = data.title
             bankRDIButton.setTitle(data.title, for: .normal)
-        case .none:
-            break
-        case .some(_):
-            break
+//        case .none:
+//            break
+//        case .some(_):
+//            break
         }
     }
     

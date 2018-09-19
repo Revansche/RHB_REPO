@@ -25,7 +25,6 @@ class RegisterNavigationViewController: UINavigationController {
     
     init() {
         super.init(rootViewController: mainViewControllers)
-        setNavigationBarHidden(true, animated: false)
         setViewControllers([mainViewControllers], animated: true)
     }
     

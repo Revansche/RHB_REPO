@@ -13,4 +13,14 @@ extension UIViewController {
   func hideNavigationBar() {
     self.navigationController?.navigationBar.isHidden = true
   }
+  
+  func setupNavigationBar(title: String, backButtonItem: UIBarButtonItem?, optionalButtonItem: UIBarButtonItem?) {
+    navigationController?.navigationBar.isHidden = false
+    navigationItem.title = title
+    navigationItem.leftBarButtonItem = backButtonItem
+    if backButtonItem == nil {
+      navigationItem.hidesBackButton = true
+    }
+    navigationItem.rightBarButtonItem = optionalButtonItem
+  }
 }

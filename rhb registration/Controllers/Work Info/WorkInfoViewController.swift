@@ -277,7 +277,7 @@ class WorkInfoViewController: UIViewController, PickerViewDelegate {
     // MARK: - Pickerview Delegate
     
     func pickerViewDelegate(didSelectPickerView pickerView: UIPickerView, withData data: PickerModel, andMasterModel masterModel: MasterModel) {
-        switch pickerTrigger {
+        switch pickerTrigger! {
         case .occupation:
             occupationButton.setTitle(data.title, for: .normal)
             formData.pekerjaan = data.id
@@ -302,10 +302,10 @@ class WorkInfoViewController: UIViewController, PickerViewDelegate {
             sourceFundsButton.setTitle(data.title, for: .normal)
             formData.sumber_dana = data.id
             formData.sumber_dana_string = data.title
-        case .none:
-            break
-        case .some(_):
-            break
+//        case .none:
+//            break
+//        case .some(_):
+//            break
         }
             
         

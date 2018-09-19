@@ -19,8 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // set initial view controllers
         window = UIWindow(frame: UIScreen.main.bounds)
-        let initialNavController: RegisterNavigationViewController = RegisterNavigationViewController()
-        initialNavController.setNavigationBarHidden(true, animated: false)
+        let initialNavController: RegisterNavigationViewController = RegisterNavigationViewController()        
         
         self.window?.rootViewController = initialNavController
         self.window?.makeKeyAndVisible()

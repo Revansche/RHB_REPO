@@ -44,6 +44,11 @@ class RhbUnderlinedTextField: UITextField {
     super.prepareForInterfaceBuilder()
     setup()
   }
+    
+  override func layoutSubviews() {
+    super.layoutSubviews()
+    setup()
+  }
   
   private func setup() {
     applyUnderLine()

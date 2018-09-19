@@ -140,8 +140,8 @@ class MLOLabel: UILabel {
                                                  y: locationOfTouchInLabel.y - textContainerOffset.y);
     let indexOfCharacter = layoutManager.characterIndex(for: locationOfTouchInTextContainer, in: textContainer, fractionOfDistanceBetweenInsertionPoints: nil)
     for item in existingLinkOnRange {
-      let foundRange = item["range"] as! [NSRange]
-      let isInRange = foundRange.map{NSLocationInRange(indexOfCharacter, $0)}.contains(true)
+      let foundRange = item["range"] as! NSRange
+      let isInRange = NSLocationInRange(indexOfCharacter, foundRange)
       if isInRange {
         print("Do something like showing the link on safari")
         guard let url = URL(string: item["link"] as! String) else {

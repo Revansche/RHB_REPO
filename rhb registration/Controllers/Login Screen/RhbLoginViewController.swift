@@ -22,18 +22,29 @@ class RhbLoginViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
     hud = JGProgressHUD(style: .dark)
-    checkboxButton.delegate = self
+    registerDelegates()
+    addTapGestureToContentView()
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+  
+  override func viewWillAppear(_ animated: Bool) {
+    setupNavigationBar(title: "Login", backButtonItem: nil, optionalButtonItem: nil)
   }
   
   @IBAction func loginButtonTapped(_ sender: Any) {
     doLogin()
   }
   
+  fileprivate func addTapGestureToContentView() {
+    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(contentViewTapped))
+    contentView.addGestureRecognizer(tapGesture)
+  }
+  
+  fileprivate func registerDelegates() {
+    checkboxButton.delegate = self
+    emailTextField.delegate = self
+    passwordTextField.delegate = self
+  }
+    
   fileprivate func doLogin() {
     let userName = emailTextField.text!
     let password = passwordTextField.text!
@@ -80,12 +91,28 @@ class RhbLoginViewController: UIViewController {
     self.present(alert, animated: true, completion: nil)
   }
   
+  @objc fileprivate func contentViewTapped() {
+    view.endEditing(true)
+  }
+  
   @IBAction func showPasswordTextPressed(_ sender: Any) {
     passwordTextField.isSecureTextEntry = false
   }
   
   @IBAction func showPasswordTextReleased(_ sender: Any) {
     passwordTextField.isSecureTextEntry = true
+  }
+}
+
+extension RhbLoginViewController: UITextFieldDelegate {
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    if textField.tag == 0 {
+      let passField = view.viewWithTag(1) as! UITextField
+      passField.becomeFirstResponder()
+    } else {
+      view.endEditing(true)
+    }
+    return true
   }
 }
 

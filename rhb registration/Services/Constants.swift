@@ -14,7 +14,10 @@ class Constants: NSObject {
     static let kRegistrationDataKey = "registration_data"
     
     static let kDefaultAuth = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjEifQ.GX-o9Fq7VKDAxSJh4LjPp8NLYa2OwFt56hJXL_d3Ey0"
-    static let kBaseUrl = "http://35.240.199.167:8080/rhb-api/"
+    
+    static let kOldIP = "http://35.240.199.167:8080"
+    static let kNewIP = "http://103.254.25.182:8080"
+    static let kBaseUrl = kNewIP + "/rhb-api/"
     
     static let kMasterBank = "master/bank/"
     static let kMasterAgama = "master/agama/"
