@@ -43,7 +43,7 @@
                                         <constraint firstAttribute="height" constant="22" id="Vr3-yJ-F5x"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
-                                    <color key="textColor" red="0.0" green="0.49803921569999998" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" red="0.074509803920000006" green="0.36862745099999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G5a-xX-8Uc" customClass="RhbUnderlinedTextField" customModule="rhb_registration" customModuleProvider="target">
@@ -92,21 +92,21 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llR-lw-I3e" userLabel="Checkbox" customClass="RhbCheckBoxButton" customModule="rhb_registration" customModuleProvider="target">
-                                    <rect key="frame" x="16" y="174" width="22" height="22"/>
+                                    <rect key="frame" x="16" y="174" width="22" height="34"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="22" id="5gM-ub-Sau"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xB-PI-09D">
-                                    <rect key="frame" x="48" y="176.5" width="94" height="17"/>
+                                    <rect key="frame" x="48" y="182.5" width="94" height="17"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <color key="textColor" red="0.36881510416666669" green="0.38974896599264702" blue="0.45610894097222221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q74-KF-07d" userLabel="Login Button" customClass="CustomButton" customModule="rhb_registration" customModuleProvider="target">
-                                    <rect key="frame" x="16" y="221" width="311" height="33"/>
-                                    <color key="backgroundColor" red="0.0" green="0.49803921569999998" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <rect key="frame" x="16" y="233" width="311" height="33"/>
+                                    <color key="backgroundColor" red="0.074509803920000006" green="0.36862745099999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="33" id="ktP-bN-scA"/>
                                     </constraints>
@@ -122,9 +122,9 @@
                                             <real key="value" value="1"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" red="0.16078431372549021" green="0.37254901960784315" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="value" red="0.074509803920000006" green="0.36862745099999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="backColor" value="#007FE2"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="backColor" value="#135EAA"/>
                                     </userDefinedRuntimeAttributes>
                                     <connections>
                                         <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="wn5-UW-vvB"/>

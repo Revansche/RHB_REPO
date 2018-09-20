@@ -1,44 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RHBPreRegisterSegmentView" customModule="rhb_registration" customModuleProvider="target">
-            <connections>
-                <outlet property="leftButton" destination="viH-aA-e8g" id="L39-Gj-1re"/>
-                <outlet property="rightButton" destination="M5K-j0-qNa" id="TAp-8L-AtL"/>
-                <outlet property="view" destination="jo2-c6-38c" id="9Sl-Kz-kCS"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clipsSubviews="YES" contentMode="scaleToFill" id="jo2-c6-38c">
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="jo2-c6-38c" customClass="RHBChoiceSegmentView" customModule="rhb_registration" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="252" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="viH-aA-e8g">
                     <rect key="frame" x="0.0" y="0.0" width="126" height="50"/>
-                    <color key="backgroundColor" red="0.0" green="0.49803921569999998" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="12"/>
-                    <state key="normal" title="Open a Free Account">
+                    <state key="normal">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>
-                        <action selector="leftButtonTapped:" destination="-1" eventType="touchUpInside" id="g6g-Hg-tD1"/>
+                        <action selector="leftButtonTapped:" destination="jo2-c6-38c" eventType="touchUpInside" id="VbS-M3-QXA"/>
                     </connections>
                 </button>
                 <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="M5K-j0-qNa">
                     <rect key="frame" x="126" y="0.0" width="126" height="50"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                    <state key="normal" title="Login Now"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.074509803920000006" green="0.36862745099999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
                     <connections>
-                        <action selector="rightButtonTapped:" destination="-1" eventType="touchUpInside" id="NrH-fH-d9t"/>
+                        <action selector="rightButtonTapped:" destination="jo2-c6-38c" eventType="touchUpInside" id="tZn-nO-GHF"/>
                     </connections>
                 </button>
             </subviews>
@@ -56,6 +51,10 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftButton" destination="viH-aA-e8g" id="Yw8-S3-8Hu"/>
+                <outlet property="rightButton" destination="M5K-j0-qNa" id="Znz-wh-OqY"/>
+            </connections>
         </view>
     </objects>
 </document>

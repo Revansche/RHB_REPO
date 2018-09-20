@@ -29,7 +29,10 @@ class Colors: NSObject {
     static func greenPrimary() -> UIColor {
         return UIColor(rgba: "#72f34a")
     }
-
+  
+  static var rhbMainBlue: UIColor {
+    return UIColor(red: (19/255.0), green: (94/255.0), blue: (170/255.0), alpha: 1)
+  }
 }
 
 class DeviceOrientation: NSObject {

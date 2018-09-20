@@ -12,7 +12,7 @@ class RegisterInfoViewController: UIViewController {
 
     @IBOutlet weak var bottomRhbColorImage: UIImageView!    
     @IBOutlet weak var TnCLabel: MLOLabel!
-    @IBOutlet weak var preRegisterSegment: RHBPreRegisterSegmentView!
+    @IBOutlet weak var preRegisterSegment: RHBChoiceSegmentView!
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class RegisterInfoViewController: UIViewController {
     }
 }
 
-extension RegisterInfoViewController: RHBPreRegisterSegmentViewDelegate {
+extension RegisterInfoViewController: RHBChoiceSegmentViewDelegate {
   func didTapLeftButton() {
     let preRegView = PreRegistrationViewController()
     self.navigationController?.pushViewController(preRegView, animated: true)
@@ -49,7 +49,7 @@ extension RegisterInfoViewController{
     //Prepare primary text
     let mloText = MLOText(
       word: "by using this app, you are agreed with our Terms & Conditions",
-      color: UIColor(red: (0/255), green: (90/255.0), blue: (199/255.0), alpha: 1),
+      color: Colors.rhbMainBlue,
       font: UIFont.boldSystemFont(ofSize: 12)
     )
     let dataSource = MLOData(withMLOText: mloText)
