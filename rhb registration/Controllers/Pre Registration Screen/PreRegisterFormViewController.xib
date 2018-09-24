@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PreRegisterFormViewController" customModule="rhb_registration" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lv5-pN-Qip" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DF5-u0-ggD">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="c0a-xw-jDx">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v1O-K9-gJp" userLabel="Top View">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="301.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="az7-dC-BLJ">
+                                                    <rect key="frame" x="27.5" y="15" width="320" height="57"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="57" id="Xfp-I4-e3L"/>
+                                                        <constraint firstAttribute="width" constant="320" id="iPd-Kk-Gjn"/>
+                                                    </constraints>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Untuk menggunakan aplikasi ini Silahkan mengisi beberapa data di bawah ini">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="15" name="AppleSDGothicNeo-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="charWrapping" baseWritingDirection="natural" lineSpacing="2" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ARb-pt-moa">
+                                                    <rect key="frame" x="0.0" y="72" width="374" height="189.5"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tZo-zi-W7D" customClass="RhbUnderlinedTextField" customModule="rhb_registration" customModuleProvider="target">
+                                                            <rect key="frame" x="20" y="0.0" width="334" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="Z1H-2q-3En"/>
+                                                            </constraints>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                                                                    <color key="value" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="underLineWidth">
+                                                                    <real key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eX5-do-e33" customClass="RhbUnderlinedTextField" customModule="rhb_registration" customModuleProvider="target">
+                                                            <rect key="frame" x="20" y="70" width="334" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="Gl4-dL-gKb"/>
+                                                            </constraints>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                                                                    <color key="value" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="underLineWidth">
+                                                                    <real key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Retype Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ubE-8c-aSf" customClass="RhbUnderlinedTextField" customModule="rhb_registration" customModuleProvider="target">
+                                                            <rect key="frame" x="20" y="139.5" width="334" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="ZP4-rQ-JfR"/>
+                                                            </constraints>
+                                                            <nil key="textColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                                                                    <color key="value" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="underLineWidth">
+                                                                    <real key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="ubE-8c-aSf" firstAttribute="leading" secondItem="tZo-zi-W7D" secondAttribute="leading" id="JZJ-yx-y2X"/>
+                                                        <constraint firstItem="tZo-zi-W7D" firstAttribute="leading" secondItem="ARb-pt-moa" secondAttribute="leading" constant="20" id="TiX-ix-UMv"/>
+                                                        <constraint firstItem="tZo-zi-W7D" firstAttribute="centerX" secondItem="ARb-pt-moa" secondAttribute="centerX" id="fEk-hv-BME"/>
+                                                        <constraint firstItem="eX5-do-e33" firstAttribute="leading" secondItem="tZo-zi-W7D" secondAttribute="leading" id="yj3-nW-CYq"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="ARb-pt-moa" firstAttribute="top" secondItem="az7-dC-BLJ" secondAttribute="bottom" id="3fQ-w4-Z4B"/>
+                                                <constraint firstItem="ARb-pt-moa" firstAttribute="centerX" secondItem="v1O-K9-gJp" secondAttribute="centerX" id="6QH-8x-XKd"/>
+                                                <constraint firstAttribute="bottom" secondItem="ARb-pt-moa" secondAttribute="bottom" constant="40" id="OeD-AG-ZGE"/>
+                                                <constraint firstItem="az7-dC-BLJ" firstAttribute="top" secondItem="v1O-K9-gJp" secondAttribute="top" constant="15" id="eYB-uQ-xoA"/>
+                                                <constraint firstItem="ARb-pt-moa" firstAttribute="leading" secondItem="v1O-K9-gJp" secondAttribute="leading" id="rkD-sT-2EJ"/>
+                                                <constraint firstItem="az7-dC-BLJ" firstAttribute="centerX" secondItem="v1O-K9-gJp" secondAttribute="centerX" id="roc-pf-z05"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ggd-Eo-wbf" userLabel="Bottom View">
+                                            <rect key="frame" x="0.0" y="301.5" width="375" height="301.5"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZI-vW-Beb" userLabel="Separator">
+                                                    <rect key="frame" x="10" y="0.0" width="354" height="1"/>
+                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="O6d-Zf-OTS"/>
+                                                    </constraints>
+                                                </view>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name (According KTP/Pasport)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OKo-Fv-6Nc" customClass="RhbUnderlinedTextField" customModule="rhb_registration" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="11" width="334" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="fZF-le-nnz"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="underLineWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yuV-BU-m2b" customClass="RhbUnderlinedTextField" customModule="rhb_registration" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="56" width="334" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="WWf-V0-Avo"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="tel"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="underLineWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kami akan mengirimkan Kode Otentifikasi ke nomor selular Anda" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RoY-hS-TNt">
+                                                    <rect key="frame" x="20" y="101" width="335" height="10.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
+                                                    <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dari mana Anda mengenal PR RHB Sekuritas Indonesia?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8C-mZ-J2f">
+                                                    <rect key="frame" x="20" y="116.5" width="335" height="13"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Pilih salah satu" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P8G-Md-GrI" customClass="RhbUnderlinedTextField" customModule="rhb_registration" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="131.5" width="335" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="ZTo-Bq-crp"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="underLineColor">
+                                                            <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="underLineWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CbA-5U-gEx" customClass="RhbCheckBoxButton" customModule="rhb_registration" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="206" width="46" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="sZI-vW-Beb" firstAttribute="centerX" secondItem="Ggd-Eo-wbf" secondAttribute="centerX" id="0Jr-9S-A6n"/>
+                                                <constraint firstItem="OKo-Fv-6Nc" firstAttribute="top" secondItem="sZI-vW-Beb" secondAttribute="bottom" constant="10" id="3Ay-RL-BXY"/>
+                                                <constraint firstItem="OKo-Fv-6Nc" firstAttribute="centerX" secondItem="Ggd-Eo-wbf" secondAttribute="centerX" id="8rS-9A-jXM"/>
+                                                <constraint firstItem="X8C-mZ-J2f" firstAttribute="leading" secondItem="Ggd-Eo-wbf" secondAttribute="leading" constant="20" id="DMD-bX-c2F"/>
+                                                <constraint firstItem="P8G-Md-GrI" firstAttribute="leading" secondItem="OKo-Fv-6Nc" secondAttribute="leading" id="KTx-WZ-c6A"/>
+                                                <constraint firstItem="sZI-vW-Beb" firstAttribute="top" secondItem="Ggd-Eo-wbf" secondAttribute="top" id="LDv-mY-aPl"/>
+                                                <constraint firstItem="OKo-Fv-6Nc" firstAttribute="leading" secondItem="Ggd-Eo-wbf" secondAttribute="leading" constant="20" id="N6u-cb-a60"/>
+                                                <constraint firstItem="X8C-mZ-J2f" firstAttribute="centerX" secondItem="Ggd-Eo-wbf" secondAttribute="centerX" id="PLd-eU-fEI"/>
+                                                <constraint firstItem="X8C-mZ-J2f" firstAttribute="top" secondItem="RoY-hS-TNt" secondAttribute="bottom" constant="5" id="S7q-pa-8l0"/>
+                                                <constraint firstItem="yuV-BU-m2b" firstAttribute="centerX" secondItem="OKo-Fv-6Nc" secondAttribute="centerX" id="T18-ac-bSk"/>
+                                                <constraint firstItem="P8G-Md-GrI" firstAttribute="centerX" secondItem="Ggd-Eo-wbf" secondAttribute="centerX" id="bHo-es-fFS"/>
+                                                <constraint firstItem="yuV-BU-m2b" firstAttribute="leading" secondItem="OKo-Fv-6Nc" secondAttribute="leading" id="dKF-g7-zN1"/>
+                                                <constraint firstItem="RoY-hS-TNt" firstAttribute="top" secondItem="yuV-BU-m2b" secondAttribute="bottom" constant="5" id="gmb-sd-LfC"/>
+                                                <constraint firstItem="P8G-Md-GrI" firstAttribute="top" secondItem="X8C-mZ-J2f" secondAttribute="bottom" constant="2" id="irT-Vh-XHF"/>
+                                                <constraint firstItem="RoY-hS-TNt" firstAttribute="centerX" secondItem="yuV-BU-m2b" secondAttribute="centerX" id="mi1-B5-PoM"/>
+                                                <constraint firstItem="yuV-BU-m2b" firstAttribute="top" secondItem="OKo-Fv-6Nc" secondAttribute="bottom" constant="5" id="pob-ZX-whx"/>
+                                                <constraint firstItem="RoY-hS-TNt" firstAttribute="leading" secondItem="yuV-BU-m2b" secondAttribute="leading" id="w4h-jV-KAc"/>
+                                                <constraint firstItem="sZI-vW-Beb" firstAttribute="leading" secondItem="Ggd-Eo-wbf" secondAttribute="leading" constant="10" id="zL7-yc-ke7"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Ggd-Eo-wbf" secondAttribute="bottom" id="YIY-Is-1Vp"/>
+                                        <constraint firstItem="v1O-K9-gJp" firstAttribute="top" secondItem="c0a-xw-jDx" secondAttribute="top" id="zRG-2Z-t78"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="c0a-xw-jDx" firstAttribute="top" secondItem="DF5-u0-ggD" secondAttribute="top" id="ERi-68-7FU"/>
+                                <constraint firstAttribute="bottom" secondItem="c0a-xw-jDx" secondAttribute="bottom" id="fft-xt-Yib"/>
+                                <constraint firstItem="c0a-xw-jDx" firstAttribute="leading" secondItem="DF5-u0-ggD" secondAttribute="leading" id="sOg-L7-SQ9"/>
+                                <constraint firstAttribute="trailing" secondItem="c0a-xw-jDx" secondAttribute="trailing" id="uL8-0O-9m1"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="DF5-u0-ggD" firstAttribute="centerY" secondItem="Lv5-pN-Qip" secondAttribute="centerY" id="M48-D1-eKv"/>
+                        <constraint firstItem="DF5-u0-ggD" firstAttribute="height" secondItem="Lv5-pN-Qip" secondAttribute="height" id="WaJ-oW-L40"/>
+                        <constraint firstItem="DF5-u0-ggD" firstAttribute="width" secondItem="Lv5-pN-Qip" secondAttribute="width" id="Xp4-Tx-Ut7"/>
+                        <constraint firstItem="DF5-u0-ggD" firstAttribute="centerX" secondItem="Lv5-pN-Qip" secondAttribute="centerX" id="egC-RC-6zN"/>
+                        <constraint firstItem="c0a-xw-jDx" firstAttribute="width" secondItem="Lv5-pN-Qip" secondAttribute="width" id="kPf-WI-Urr"/>
+                        <constraint firstItem="c0a-xw-jDx" firstAttribute="height" secondItem="Lv5-pN-Qip" secondAttribute="height" id="ufC-zs-iIY"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGI-08-kbn">
+                    <rect key="frame" x="0.0" y="622" width="374" height="45"/>
+                    <color key="backgroundColor" red="0.16078431369999999" green="0.37254901959999998" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="BEv-OI-E40"/>
+                    </constraints>
+                    <state key="normal" title="PROCEED">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a-1-splashScreen-top-banner" translatesAutoresizingMaskIntoConstraints="NO" id="il2-HZ-J2q" userLabel="Top Border">
+                    <rect key="frame" x="0.0" y="64" width="375" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="4kX-DA-vGJ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Lv5-pN-Qip" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="0Tz-Td-yHF"/>
+                <constraint firstItem="il2-HZ-J2q" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="1FL-CH-wcD"/>
+                <constraint firstItem="NGI-08-kbn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="LnE-Ey-IuF"/>
+                <constraint firstItem="il2-HZ-J2q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" priority="750" id="PQe-RI-wkK"/>
+                <constraint firstItem="Lv5-pN-Qip" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" priority="750" id="ROX-nb-5Ti"/>
+                <constraint firstItem="Lv5-pN-Qip" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="T4C-8m-oIF"/>
+                <constraint firstItem="Lv5-pN-Qip" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="ZcG-g7-cfb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Lv5-pN-Qip" secondAttribute="bottom" id="dMX-hO-hmv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NGI-08-kbn" secondAttribute="bottom" id="ncB-5z-Uer"/>
+                <constraint firstItem="il2-HZ-J2q" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="uTY-Zf-tEX"/>
+                <constraint firstItem="NGI-08-kbn" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="xS6-Y4-ng0"/>
+                <constraint firstItem="il2-HZ-J2q" firstAttribute="leading" secondItem="Lv5-pN-Qip" secondAttribute="leading" id="ySr-rb-OBG"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="a-1-splashScreen-top-banner" width="720" height="26"/>
+    </resources>
+</document>

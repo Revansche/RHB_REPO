@@ -1,5 +1,5 @@
 //
-//  PreRegistrationViewController.swift
+//  FinalPreRegistrationViewController.swift
 //  rhb registration
 //
 //  Created by Alam Yudi Aryanto on 19/06/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PreRegistrationViewController: UIViewController {
+class FinalPreRegistrationViewController: UIViewController {
     @IBOutlet weak var fillDataSegment: UISegmentedControl!
     
     override func viewDidLoad() {

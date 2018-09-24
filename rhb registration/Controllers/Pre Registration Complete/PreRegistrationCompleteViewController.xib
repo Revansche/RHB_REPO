@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -101,13 +101,28 @@ Tanpa biaya, dengan cukup mengisi seluruh kelengkapan data yang ada</string>
                         <constraint firstItem="P5j-dE-TjI" firstAttribute="centerX" secondItem="8w4-bd-ifn" secondAttribute="centerX" id="uGo-0f-r0h"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xhg-Ce-y77" customClass="RHBChoiceSegmentView" customModule="rhb_registration" customModuleProvider="target">
+                    <rect key="frame" x="20" y="498" width="280" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="aWw-2W-Y14"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftButtonSelected" value="NO"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="leftButtonText" value="Nanti"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="rightButtonText" value="Isi Sekarang"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="TWg-kV-tpF" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="2uN-gs-8Xz"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Xhg-Ce-y77" secondAttribute="bottom" constant="30" id="8Mj-C7-tTP"/>
+                <constraint firstItem="Xhg-Ce-y77" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="CzZ-qX-OPr"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="8w4-bd-ifn" secondAttribute="trailing" constant="16" id="Lay-bg-qZV"/>
                 <constraint firstItem="TWg-kV-tpF" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Ldn-3H-0ZI"/>
                 <constraint firstItem="8w4-bd-ifn" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="WpM-gB-Qbr"/>
+                <constraint firstItem="Xhg-Ce-y77" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="b1I-A5-cEd"/>
                 <constraint firstItem="8w4-bd-ifn" firstAttribute="top" secondItem="TWg-kV-tpF" secondAttribute="bottom" constant="16" id="bNp-Tv-AaF"/>
                 <constraint firstItem="TWg-kV-tpF" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="fi8-50-4XA"/>
             </constraints>

@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		0F14D0222902135727939B64 /* Pods_rhb_registrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A2D2AFBC107D533FD46F1D /* Pods_rhb_registrationTests.framework */; };
 		221FDE8E9D25580A1A20A4AD /* Pods_rhb_registrationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5949E0510C1DECB6F701332C /* Pods_rhb_registrationUITests.framework */; };
-		2632899A21528B0C0067D46A /* RhbFinalPreRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2632899821528B0C0067D46A /* RhbFinalPreRegistrationViewController.swift */; };
-		2632899B21528B0C0067D46A /* RhbFinalPreRegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2632899921528B0C0067D46A /* RhbFinalPreRegistrationViewController.xib */; };
 		4E5675B220D92B4000115457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675B120D92B4000115457 /* AppDelegate.swift */; };
 		4E5675B420D92B4000115457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675B320D92B4000115457 /* ViewController.swift */; };
 		4E5675B920D92B4100115457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5675B820D92B4100115457 /* Assets.xcassets */; };
@@ -18,13 +16,11 @@
 		4E5675C720D92B4100115457 /* rhb_registrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675C620D92B4100115457 /* rhb_registrationTests.swift */; };
 		4E5675D220D92B4100115457 /* rhb_registrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675D120D92B4100115457 /* rhb_registrationUITests.swift */; };
 		4E5675F020D92C1F00115457 /* RegisterInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E5675E920D92C1F00115457 /* RegisterInfoViewController.xib */; };
-		4E5675F120D92C1F00115457 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E5675EB20D92C1F00115457 /* LoginViewController.xib */; };
-		4E5675F220D92C1F00115457 /* PreRegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E5675ED20D92C1F00115457 /* PreRegistrationViewController.xib */; };
+		4E5675F220D92C1F00115457 /* FinalPreRegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E5675ED20D92C1F00115457 /* FinalPreRegistrationViewController.xib */; };
 		4E5675F320D92C1F00115457 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E5675EF20D92C1F00115457 /* SplashViewController.xib */; };
 		4E5675F520D92CAF00115457 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675F420D92CAF00115457 /* SplashViewController.swift */; };
 		4E5675F720D92D7000115457 /* RegisterInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675F620D92D7000115457 /* RegisterInfoViewController.swift */; };
-		4E5675F920D92D8D00115457 /* PreRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675F820D92D8D00115457 /* PreRegistrationViewController.swift */; };
-		4E5675FB20D92DA300115457 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675FA20D92DA300115457 /* LoginViewController.swift */; };
+		4E5675F920D92D8D00115457 /* FinalPreRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675F820D92D8D00115457 /* FinalPreRegistrationViewController.swift */; };
 		4E5675FD20D92E0E00115457 /* RegisterNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5675FC20D92E0E00115457 /* RegisterNavigationViewController.swift */; };
 		4E63BAFC210C1A40002239E5 /* FormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E63BAFB210C1A40002239E5 /* FormData.swift */; };
 		4E63BAFE210CB1D5002239E5 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E63BAFD210CB1D5002239E5 /* VideoHelper.swift */; };
@@ -32,7 +28,7 @@
 		4E6A415120FF64B600D9B2DE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A415020FF64B600D9B2DE /* Colors.swift */; };
 		4E6A415320FF64E000D9B2DE /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A415220FF64E000D9B2DE /* UIColorExtension.swift */; };
 		4E6A415520FF671B00D9B2DE /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A415420FF671B00D9B2DE /* CustomView.swift */; };
-		4E6A415920FF696400D9B2DE /* RegistrationCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A415720FF696400D9B2DE /* RegistrationCompleteViewController.swift */; };
+		4E6A415920FF696400D9B2DE /* PreRegistrationCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A415720FF696400D9B2DE /* PreRegistrationCompleteViewController.swift */; };
 		4E6A415E20FF6E4300D9B2DE /* RegistrationFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A415C20FF6E4300D9B2DE /* RegistrationFormViewController.swift */; };
 		4E6A415F20FF6E4300D9B2DE /* RegistrationFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E6A415D20FF6E4300D9B2DE /* RegistrationFormViewController.xib */; };
 		4E6A416320FF9D0900D9B2DE /* PersonalnfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A416120FF9D0900D9B2DE /* PersonalnfoViewController.swift */; };
@@ -46,7 +42,7 @@
 		4E710A832122841100905729 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E710A822122841100905729 /* FileService.swift */; };
 		4E822E1D210366EC0087E942 /* SignatureFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E822E1B210366EC0087E942 /* SignatureFormViewController.swift */; };
 		4E822E1E210366EC0087E942 /* SignatureFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E822E1C210366EC0087E942 /* SignatureFormViewController.xib */; };
-		4E822E2021036EC60087E942 /* RegistrationCompleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E822E1F21036EC60087E942 /* RegistrationCompleteViewController.xib */; };
+		4E822E2021036EC60087E942 /* PreRegistrationCompleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E822E1F21036EC60087E942 /* PreRegistrationCompleteViewController.xib */; };
 		4E822E22210374160087E942 /* YPDrawSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E822E21210374160087E942 /* YPDrawSignatureView.swift */; };
 		4E822E26210430380087E942 /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E822E25210430380087E942 /* CameraHandler.swift */; };
 		4E822E2A210434320087E942 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E822E28210434320087E942 /* Constants.swift */; };
@@ -70,6 +66,8 @@
 		4E86048F2109CD4E00019F77 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86048D2109CD4E00019F77 /* PickerViewController.swift */; };
 		4E8604902109CD4E00019F77 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E86048E2109CD4E00019F77 /* PickerViewController.xib */; };
 		4E8604922109D4CB00019F77 /* PickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8604912109D4CB00019F77 /* PickerModel.swift */; };
+		9418E75C2157ECA300AD3B7E /* PreRegisterFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9418E75A2157ECA300AD3B7E /* PreRegisterFormViewController.swift */; };
+		9418E75D2157ECA300AD3B7E /* PreRegisterFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9418E75B2157ECA300AD3B7E /* PreRegisterFormViewController.xib */; };
 		94D4E5AF214CB18600DB15BB /* MLOLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4E5AE214CB18500DB15BB /* MLOLabel.swift */; };
 		94D4E5B2214CCCF600DB15BB /* UIViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4E5B1214CCCF600DB15BB /* UIViewController+NavigationBar.swift */; };
 		94D4E5B6214D7ECC00DB15BB /* RHBChoiceSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4E5B5214D7ECC00DB15BB /* RHBChoiceSegmentView.swift */; };
@@ -100,8 +98,6 @@
 
 /* Begin PBXFileReference section */
 		12CE8AC5A04265B58AF3268D /* Pods-rhb registration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rhb registration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rhb registration/Pods-rhb registration.debug.xcconfig"; sourceTree = "<group>"; };
-		2632899821528B0C0067D46A /* RhbFinalPreRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RhbFinalPreRegistrationViewController.swift; sourceTree = "<group>"; };
-		2632899921528B0C0067D46A /* RhbFinalPreRegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RhbFinalPreRegistrationViewController.xib; sourceTree = "<group>"; };
 		4E5675AE20D92B4000115457 /* rhb registration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rhb registration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E5675B120D92B4000115457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E5675B320D92B4000115457 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,13 +111,11 @@
 		4E5675D120D92B4100115457 /* rhb_registrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rhb_registrationUITests.swift; sourceTree = "<group>"; };
 		4E5675D320D92B4100115457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E5675E920D92C1F00115457 /* RegisterInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterInfoViewController.xib; sourceTree = "<group>"; };
-		4E5675EB20D92C1F00115457 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		4E5675ED20D92C1F00115457 /* PreRegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreRegistrationViewController.xib; sourceTree = "<group>"; };
+		4E5675ED20D92C1F00115457 /* FinalPreRegistrationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinalPreRegistrationViewController.xib; sourceTree = "<group>"; };
 		4E5675EF20D92C1F00115457 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		4E5675F420D92CAF00115457 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		4E5675F620D92D7000115457 /* RegisterInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInfoViewController.swift; sourceTree = "<group>"; };
-		4E5675F820D92D8D00115457 /* PreRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreRegistrationViewController.swift; sourceTree = "<group>"; };
-		4E5675FA20D92DA300115457 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4E5675F820D92D8D00115457 /* FinalPreRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalPreRegistrationViewController.swift; sourceTree = "<group>"; };
 		4E5675FC20D92E0E00115457 /* RegisterNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNavigationViewController.swift; sourceTree = "<group>"; };
 		4E63BAFB210C1A40002239E5 /* FormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormData.swift; sourceTree = "<group>"; };
 		4E63BAFD210CB1D5002239E5 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
@@ -129,7 +123,7 @@
 		4E6A415020FF64B600D9B2DE /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		4E6A415220FF64E000D9B2DE /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		4E6A415420FF671B00D9B2DE /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
-		4E6A415720FF696400D9B2DE /* RegistrationCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCompleteViewController.swift; sourceTree = "<group>"; };
+		4E6A415720FF696400D9B2DE /* PreRegistrationCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreRegistrationCompleteViewController.swift; sourceTree = "<group>"; };
 		4E6A415C20FF6E4300D9B2DE /* RegistrationFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFormViewController.swift; sourceTree = "<group>"; };
 		4E6A415D20FF6E4300D9B2DE /* RegistrationFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationFormViewController.xib; sourceTree = "<group>"; };
 		4E6A416120FF9D0900D9B2DE /* PersonalnfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalnfoViewController.swift; sourceTree = "<group>"; };
@@ -143,7 +137,7 @@
 		4E710A822122841100905729 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 		4E822E1B210366EC0087E942 /* SignatureFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureFormViewController.swift; sourceTree = "<group>"; };
 		4E822E1C210366EC0087E942 /* SignatureFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignatureFormViewController.xib; sourceTree = "<group>"; };
-		4E822E1F21036EC60087E942 /* RegistrationCompleteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistrationCompleteViewController.xib; sourceTree = "<group>"; };
+		4E822E1F21036EC60087E942 /* PreRegistrationCompleteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreRegistrationCompleteViewController.xib; sourceTree = "<group>"; };
 		4E822E21210374160087E942 /* YPDrawSignatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YPDrawSignatureView.swift; sourceTree = "<group>"; };
 		4E822E25210430380087E942 /* CameraHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraHandler.swift; sourceTree = "<group>"; };
 		4E822E28210434320087E942 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -170,6 +164,8 @@
 		57A2D2AFBC107D533FD46F1D /* Pods_rhb_registrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rhb_registrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5949E0510C1DECB6F701332C /* Pods_rhb_registrationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rhb_registrationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79297CEBF7C22294F13CD6EE /* Pods-rhb registrationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rhb registrationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rhb registrationUITests/Pods-rhb registrationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9418E75A2157ECA300AD3B7E /* PreRegisterFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreRegisterFormViewController.swift; sourceTree = "<group>"; };
+		9418E75B2157ECA300AD3B7E /* PreRegisterFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreRegisterFormViewController.xib; sourceTree = "<group>"; };
 		94D4E5AE214CB18500DB15BB /* MLOLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLOLabel.swift; sourceTree = "<group>"; };
 		94D4E5B1214CCCF600DB15BB /* UIViewController+NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBar.swift"; sourceTree = "<group>"; };
 		94D4E5B5214D7ECC00DB15BB /* RHBChoiceSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHBChoiceSegmentView.swift; sourceTree = "<group>"; };
@@ -280,7 +276,7 @@
 				4E6A416520FF9E6D00D9B2DE /* Work Info */,
 				4E6A416020FF9CEA00D9B2DE /* Registration Personal Info */,
 				4E6A415B20FF6E2C00D9B2DE /* Registration Form */,
-				4E6A415620FF694600D9B2DE /* Registration Complete */,
+				4E6A415620FF694600D9B2DE /* Pre Registration Complete */,
 				4E5675EA20D92C1F00115457 /* Login Screen */,
 				4E5675EC20D92C1F00115457 /* Pre Registration Screen */,
 				4E5675E820D92C1F00115457 /* Cover Screen */,
@@ -302,8 +298,6 @@
 		4E5675EA20D92C1F00115457 /* Login Screen */ = {
 			isa = PBXGroup;
 			children = (
-				4E5675EB20D92C1F00115457 /* LoginViewController.xib */,
-				4E5675FA20D92DA300115457 /* LoginViewController.swift */,
 				94D4E5BD214EC6D200DB15BB /* RhbLoginViewController.swift */,
 				94D4E5BE214EC6D200DB15BB /* RhbLoginViewController.xib */,
 			);
@@ -313,10 +307,10 @@
 		4E5675EC20D92C1F00115457 /* Pre Registration Screen */ = {
 			isa = PBXGroup;
 			children = (
-				4E5675ED20D92C1F00115457 /* PreRegistrationViewController.xib */,
-				4E5675F820D92D8D00115457 /* PreRegistrationViewController.swift */,
-				2632899821528B0C0067D46A /* RhbFinalPreRegistrationViewController.swift */,
-				2632899921528B0C0067D46A /* RhbFinalPreRegistrationViewController.xib */,
+				4E5675ED20D92C1F00115457 /* FinalPreRegistrationViewController.xib */,
+				4E5675F820D92D8D00115457 /* FinalPreRegistrationViewController.swift */,
+				9418E75A2157ECA300AD3B7E /* PreRegisterFormViewController.swift */,
+				9418E75B2157ECA300AD3B7E /* PreRegisterFormViewController.xib */,
 			);
 			path = "Pre Registration Screen";
 			sourceTree = "<group>";
@@ -354,13 +348,13 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		4E6A415620FF694600D9B2DE /* Registration Complete */ = {
+		4E6A415620FF694600D9B2DE /* Pre Registration Complete */ = {
 			isa = PBXGroup;
 			children = (
-				4E822E1F21036EC60087E942 /* RegistrationCompleteViewController.xib */,
-				4E6A415720FF696400D9B2DE /* RegistrationCompleteViewController.swift */,
+				4E822E1F21036EC60087E942 /* PreRegistrationCompleteViewController.xib */,
+				4E6A415720FF696400D9B2DE /* PreRegistrationCompleteViewController.swift */,
 			);
-			path = "Registration Complete";
+			path = "Pre Registration Complete";
 			sourceTree = "<group>";
 		};
 		4E6A415B20FF6E2C00D9B2DE /* Registration Form */ = {
@@ -624,11 +618,11 @@
 			files = (
 				94D4E5B8214D81D100DB15BB /* RHBChoiceSegmentView.xib in Resources */,
 				4E6A416E20FF9EE200D9B2DE /* ProfileRiskViewController.xib in Resources */,
-				4E5675F120D92C1F00115457 /* LoginViewController.xib in Resources */,
 				4E822E1E210366EC0087E942 /* SignatureFormViewController.xib in Resources */,
+				9418E75D2157ECA300AD3B7E /* PreRegisterFormViewController.xib in Resources */,
 				4E6A416420FF9D0900D9B2DE /* PersonalnfoViewController.xib in Resources */,
 				4E5675BC20D92B4100115457 /* LaunchScreen.storyboard in Resources */,
-				4E822E2021036EC60087E942 /* RegistrationCompleteViewController.xib in Resources */,
+				4E822E2021036EC60087E942 /* PreRegistrationCompleteViewController.xib in Resources */,
 				4E5675B920D92B4100115457 /* Assets.xcassets in Resources */,
 				4E5675F320D92C1F00115457 /* SplashViewController.xib in Resources */,
 				4E6A415F20FF6E4300D9B2DE /* RegistrationFormViewController.xib in Resources */,
@@ -636,8 +630,7 @@
 				4E5675F020D92C1F00115457 /* RegisterInfoViewController.xib in Resources */,
 				4E6A417320FF9F2600D9B2DE /* RegistrationSummaryViewController.xib in Resources */,
 				4E8604902109CD4E00019F77 /* PickerViewController.xib in Resources */,
-				4E5675F220D92C1F00115457 /* PreRegistrationViewController.xib in Resources */,
-				2632899B21528B0C0067D46A /* RhbFinalPreRegistrationViewController.xib in Resources */,
+				4E5675F220D92C1F00115457 /* FinalPreRegistrationViewController.xib in Resources */,
 				94D4E5C0214EC6D200DB15BB /* RhbLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -746,7 +739,6 @@
 			files = (
 				4E86048921098C7500019F77 /* SourceFunds.swift in Sources */,
 				4E86048321098B7E00019F77 /* Income.swift in Sources */,
-				4E5675FB20D92DA300115457 /* LoginViewController.swift in Sources */,
 				4E8604922109D4CB00019F77 /* PickerModel.swift in Sources */,
 				94D4E5B2214CCCF600DB15BB /* UIViewController+NavigationBar.swift in Sources */,
 				4E86048F2109CD4E00019F77 /* PickerViewController.swift in Sources */,
@@ -762,7 +754,7 @@
 				4E6A416D20FF9EE200D9B2DE /* ProfileRiskViewController.swift in Sources */,
 				4E5675F520D92CAF00115457 /* SplashViewController.swift in Sources */,
 				4E8604712109880A00019F77 /* Country.swift in Sources */,
-				4E5675F920D92D8D00115457 /* PreRegistrationViewController.swift in Sources */,
+				4E5675F920D92D8D00115457 /* FinalPreRegistrationViewController.swift in Sources */,
 				4E86046F2109875E00019F77 /* Bank.swift in Sources */,
 				4E5675B420D92B4000115457 /* ViewController.swift in Sources */,
 				4E8604752109892500019F77 /* Province.swift in Sources */,
@@ -770,9 +762,8 @@
 				4E710A832122841100905729 /* FileService.swift in Sources */,
 				94D4E5B6214D7ECC00DB15BB /* RHBChoiceSegmentView.swift in Sources */,
 				94D4E5AF214CB18600DB15BB /* MLOLabel.swift in Sources */,
-				2632899A21528B0C0067D46A /* RhbFinalPreRegistrationViewController.swift in Sources */,
 				4E6A415E20FF6E4300D9B2DE /* RegistrationFormViewController.swift in Sources */,
-				4E6A415920FF696400D9B2DE /* RegistrationCompleteViewController.swift in Sources */,
+				4E6A415920FF696400D9B2DE /* PreRegistrationCompleteViewController.swift in Sources */,
 				4E86048B2109BAB600019F77 /* BusinessType.swift in Sources */,
 				4E822E2A210434320087E942 /* Constants.swift in Sources */,
 				4E63BAFC210C1A40002239E5 /* FormData.swift in Sources */,
@@ -781,6 +772,7 @@
 				4E6A416320FF9D0900D9B2DE /* PersonalnfoViewController.swift in Sources */,
 				4E86047F21098AF100019F77 /* Marital.swift in Sources */,
 				4E6A415520FF671B00D9B2DE /* CustomView.swift in Sources */,
+				9418E75C2157ECA300AD3B7E /* PreRegisterFormViewController.swift in Sources */,
 				4E86046D210980F700019F77 /* Religion.swift in Sources */,
 				4E5675FD20D92E0E00115457 /* RegisterNavigationViewController.swift in Sources */,
 				4E86047D21098AA700019F77 /* KepemilikanRumah.swift in Sources */,

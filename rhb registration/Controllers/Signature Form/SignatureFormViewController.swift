@@ -43,7 +43,7 @@ class SignatureFormViewController: UIViewController {
     }
     
     @IBAction func processBtnTap(_ sender: Any) {
-        let regVC = RegistrationCompleteViewController()
+      let regVC = PreRegistrationCompleteViewController()
         self.navigationController?.pushViewController(regVC, animated: true)
         hud.textLabel.text = "Loading"
         hud.show(in: self.view)

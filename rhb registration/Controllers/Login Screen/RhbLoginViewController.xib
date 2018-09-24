@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -47,9 +49,9 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G5a-xX-8Uc" customClass="RhbUnderlinedTextField" customModule="rhb_registration" customModuleProvider="target">
-                                    <rect key="frame" x="16" y="62" width="311" height="40"/>
+                                    <rect key="frame" x="16" y="62" width="311" height="45"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="dFT-0e-Zjo"/>
+                                        <constraint firstAttribute="height" constant="45" id="dFT-0e-Zjo"/>
                                     </constraints>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -61,12 +63,18 @@
                                         <userDefinedRuntimeAttribute type="number" keyPath="underLineWidth">
                                             <real key="value" value="1"/>
                                         </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="placeholderInsetX">
+                                            <real key="value" value="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="placeholderInsetY">
+                                            <real key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
-                                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DMT-Gr-ucv" customClass="RhbUnderlinedTextField" customModule="rhb_registration" customModuleProvider="target">
-                                    <rect key="frame" x="16" y="120" width="311" height="40"/>
+                                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="DMT-Gr-ucv" customClass="RhbUnderlinedTextField" customModule="rhb_registration" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="125" width="311" height="45"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="I1j-q9-b1e"/>
+                                        <constraint firstAttribute="height" constant="45" id="I1j-q9-b1e"/>
                                     </constraints>
                                     <nil key="textColor"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -80,10 +88,18 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMs-Kj-3Ae" userLabel="See Button">
-                                    <rect key="frame" x="300.5" y="133.5" width="26.5" height="13"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b1-1-LoginPage-ic-eyes" translatesAutoresizingMaskIntoConstraints="NO" id="Ddf-gM-Rtr" userLabel="Eye Icon">
+                                    <rect key="frame" x="277.5" y="137" width="39.5" height="21"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" secondItem="PMs-Kj-3Ae" secondAttribute="height" multiplier="2:1" id="Qik-KM-9EZ"/>
+                                        <constraint firstAttribute="width" secondItem="Ddf-gM-Rtr" secondAttribute="height" multiplier="15:8" id="ebr-G5-bWq"/>
+                                    </constraints>
+                                </imageView>
+                                <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMs-Kj-3Ae" userLabel="See Button">
+                                    <rect key="frame" x="288.5" y="134.5" width="38.5" height="26"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="PMs-Kj-3Ae" secondAttribute="height" multiplier="1.5:1" id="Qik-KM-9EZ"/>
                                     </constraints>
                                     <state key="normal" image="b1-1-LoginPage-ic-eyes"/>
                                     <connections>
@@ -92,20 +108,20 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llR-lw-I3e" userLabel="Checkbox" customClass="RhbCheckBoxButton" customModule="rhb_registration" customModuleProvider="target">
-                                    <rect key="frame" x="16" y="174" width="22" height="34"/>
+                                    <rect key="frame" x="16" y="184" width="22" height="22"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="22" id="5gM-ub-Sau"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xB-PI-09D">
-                                    <rect key="frame" x="48" y="182.5" width="94" height="17"/>
+                                    <rect key="frame" x="48" y="186.5" width="94" height="17"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <color key="textColor" red="0.36881510416666669" green="0.38974896599264702" blue="0.45610894097222221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q74-KF-07d" userLabel="Login Button" customClass="CustomButton" customModule="rhb_registration" customModuleProvider="target">
-                                    <rect key="frame" x="16" y="233" width="311" height="33"/>
+                                    <rect key="frame" x="16" y="231" width="311" height="33"/>
                                     <color key="backgroundColor" red="0.074509803920000006" green="0.36862745099999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="33" id="ktP-bN-scA"/>
@@ -136,13 +152,15 @@
                                 <constraint firstItem="DMT-Gr-ucv" firstAttribute="centerX" secondItem="G5a-xX-8Uc" secondAttribute="centerX" id="33l-Jj-ZH5"/>
                                 <constraint firstItem="G5a-xX-8Uc" firstAttribute="centerX" secondItem="STw-dH-xK3" secondAttribute="centerX" id="5Pl-Wi-nQS"/>
                                 <constraint firstItem="llR-lw-I3e" firstAttribute="top" secondItem="DMT-Gr-ucv" secondAttribute="bottom" constant="14" id="7e8-qu-iRx"/>
-                                <constraint firstItem="PMs-Kj-3Ae" firstAttribute="height" secondItem="DMT-Gr-ucv" secondAttribute="height" multiplier="1/3" id="9Yz-E3-hea"/>
+                                <constraint firstItem="PMs-Kj-3Ae" firstAttribute="height" secondItem="DMT-Gr-ucv" secondAttribute="height" multiplier="4/7" id="9Yz-E3-hea"/>
                                 <constraint firstItem="G5a-xX-8Uc" firstAttribute="top" secondItem="VYs-pS-1GX" secondAttribute="bottom" constant="32" id="AHy-YJ-Dhe"/>
                                 <constraint firstItem="Q74-KF-07d" firstAttribute="centerX" secondItem="DZZ-1x-oNY" secondAttribute="centerX" id="MxC-Y8-BHO"/>
-                                <constraint firstItem="PMs-Kj-3Ae" firstAttribute="trailing" secondItem="DMT-Gr-ucv" secondAttribute="trailing" id="Q1I-uA-bIl"/>
+                                <constraint firstItem="DMT-Gr-ucv" firstAttribute="trailing" secondItem="PMs-Kj-3Ae" secondAttribute="trailing" id="Q1I-uA-bIl"/>
                                 <constraint firstItem="Q74-KF-07d" firstAttribute="leading" secondItem="DMT-Gr-ucv" secondAttribute="leading" id="QLK-W5-JiR"/>
+                                <constraint firstItem="DMT-Gr-ucv" firstAttribute="trailing" secondItem="Ddf-gM-Rtr" secondAttribute="trailing" constant="10" id="R1S-qP-yWN"/>
                                 <constraint firstItem="DMT-Gr-ucv" firstAttribute="leading" secondItem="G5a-xX-8Uc" secondAttribute="leading" id="X1r-JC-cgV"/>
                                 <constraint firstItem="Q74-KF-07d" firstAttribute="top" secondItem="llR-lw-I3e" secondAttribute="bottom" constant="25" id="YTT-vz-W4w"/>
+                                <constraint firstItem="Ddf-gM-Rtr" firstAttribute="centerY" secondItem="DMT-Gr-ucv" secondAttribute="centerY" id="bBY-0x-q0m"/>
                                 <constraint firstItem="llR-lw-I3e" firstAttribute="leading" secondItem="G5a-xX-8Uc" secondAttribute="leading" id="cBH-nW-MMu"/>
                                 <constraint firstItem="DMT-Gr-ucv" firstAttribute="top" secondItem="G5a-xX-8Uc" secondAttribute="bottom" constant="18" id="cQA-iZ-YBJ"/>
                                 <constraint firstItem="VYs-pS-1GX" firstAttribute="top" secondItem="DZZ-1x-oNY" secondAttribute="top" constant="8" id="h4Y-rb-qUa"/>
@@ -154,6 +172,11 @@
                                 <constraint firstItem="3xB-PI-09D" firstAttribute="centerY" secondItem="llR-lw-I3e" secondAttribute="centerY" id="ztJ-h3-cjX"/>
                             </constraints>
                             <viewLayoutGuide key="safeArea" id="STw-dH-xK3"/>
+                            <variation key="default">
+                                <mask key="subviews">
+                                    <exclude reference="PMs-Kj-3Ae"/>
+                                </mask>
+                            </variation>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

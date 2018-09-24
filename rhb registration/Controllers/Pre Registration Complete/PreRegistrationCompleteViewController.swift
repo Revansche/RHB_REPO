@@ -1,5 +1,5 @@
 //
-//  RegistrationCompleteViewController.swift
+//  PreRegistrationCompleteViewController.swift
 //  rhb registration
 //
 //  Created by Alam Yudi Aryanto on 18/07/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegistrationCompleteViewController: UIViewController {
+class PreRegistrationCompleteViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

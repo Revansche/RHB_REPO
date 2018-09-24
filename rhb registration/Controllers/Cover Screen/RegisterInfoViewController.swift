@@ -33,7 +33,8 @@ class RegisterInfoViewController: UIViewController {
 
 extension RegisterInfoViewController: RHBChoiceSegmentViewDelegate {
   func didTapLeftButton() {
-    let preRegView = PreRegistrationViewController()
+//    let preRegView = FinalPreRegistrationViewController()
+    let preRegView = PreRegisterFormViewController()
     self.navigationController?.pushViewController(preRegView, animated: true)
   }
   
