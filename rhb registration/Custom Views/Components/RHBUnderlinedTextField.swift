@@ -1,5 +1,5 @@
 //
-//  RhbUnderlinedTextField.swift
+//  RHBUnderlinedTextField.swift
 //  rhb registration
 //
 //  Created by Ghean Ginanjar on 16/09/18.
@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class RhbUnderlinedTextField: UITextField {
+class RHBUnderlinedTextField: UITextField {
   
   //MARK: Placeholder vars
   fileprivate let customPlaceholderLabel = UILabel()
@@ -144,7 +144,7 @@ class RhbUnderlinedTextField: UITextField {
 }
 
 //MARK: Handling placeholder
-extension RhbUnderlinedTextField {
+extension RHBUnderlinedTextField {
   
   fileprivate func updatePlaceholder() {
     customPlaceholderLabel.text = placeholder

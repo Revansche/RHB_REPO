@@ -12,10 +12,7 @@ class PreRegistrationCompleteViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Registration Complete"
-//        self.navigationController?.setNavigationBarHidden(true, animated: false)
-
-        // Do any additional setup after loading the view.
+        setupNavigationBar(title: "Pre-Registration", optionalButtonItem: nil)
     }
 
     override func didReceiveMemoryWarning() {

@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RhbLoginViewController" customModule="rhb_registration" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RHBLoginViewController" customModule="rhb_registration" customModuleProvider="target">
             <connections>
                 <outlet property="checkboxButton" destination="llR-lw-I3e" id="5ej-tV-76b"/>
                 <outlet property="contentView" destination="fXx-Tz-w8v" id="1o4-FZ-pWb"/>
@@ -48,7 +46,7 @@
                                     <color key="textColor" red="0.074509803920000006" green="0.36862745099999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G5a-xX-8Uc" customClass="RhbUnderlinedTextField" customModule="rhb_registration" customModuleProvider="target">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G5a-xX-8Uc" customClass="RHBUnderlinedTextField" customModule="rhb_registration" customModuleProvider="target">
                                     <rect key="frame" x="16" y="62" width="311" height="45"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="45" id="dFT-0e-Zjo"/>
@@ -71,7 +69,7 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
-                                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="DMT-Gr-ucv" customClass="RhbUnderlinedTextField" customModule="rhb_registration" customModuleProvider="target">
+                                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="DMT-Gr-ucv" customClass="RHBUnderlinedTextField" customModule="rhb_registration" customModuleProvider="target">
                                     <rect key="frame" x="16" y="125" width="311" height="45"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="45" id="I1j-q9-b1e"/>
@@ -88,26 +86,24 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b1-1-LoginPage-ic-eyes" translatesAutoresizingMaskIntoConstraints="NO" id="Ddf-gM-Rtr" userLabel="Eye Icon">
-                                    <rect key="frame" x="277.5" y="137" width="39.5" height="21"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6w7-zG-rvL" userLabel="Cover for Shift">
+                                    <rect key="frame" x="282" y="126" width="45" height="43"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5z6-UZ-an0" userLabel="See Password">
+                                    <rect key="frame" x="292.5" y="142" width="29.5" height="18"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" secondItem="Ddf-gM-Rtr" secondAttribute="height" multiplier="15:8" id="ebr-G5-bWq"/>
-                                    </constraints>
-                                </imageView>
-                                <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMs-Kj-3Ae" userLabel="See Button">
-                                    <rect key="frame" x="288.5" y="134.5" width="38.5" height="26"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" secondItem="PMs-Kj-3Ae" secondAttribute="height" multiplier="1.5:1" id="Qik-KM-9EZ"/>
+                                        <constraint firstAttribute="height" constant="18" id="Vkt-nN-aBT"/>
+                                        <constraint firstAttribute="width" secondItem="5z6-UZ-an0" secondAttribute="height" multiplier="18:11" id="dD7-UW-mkI"/>
                                     </constraints>
                                     <state key="normal" image="b1-1-LoginPage-ic-eyes"/>
                                     <connections>
-                                        <action selector="showPasswordTextPressed:" destination="-1" eventType="touchDown" id="wwO-9b-4Q8"/>
-                                        <action selector="showPasswordTextReleased:" destination="-1" eventType="touchUpInside" id="bhO-ze-Iul"/>
+                                        <action selector="showPasswordTextPressed:" destination="-1" eventType="touchDown" id="YjJ-4L-jxj"/>
+                                        <action selector="showPasswordTextReleased:" destination="-1" eventType="touchUpInside" id="Caw-12-KmA"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llR-lw-I3e" userLabel="Checkbox" customClass="RhbCheckBoxButton" customModule="rhb_registration" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llR-lw-I3e" userLabel="Checkbox" customClass="RHBCheckBoxButton" customModule="rhb_registration" customModuleProvider="target">
                                     <rect key="frame" x="16" y="184" width="22" height="22"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="22" id="5gM-ub-Sau"/>
@@ -152,31 +148,27 @@
                                 <constraint firstItem="DMT-Gr-ucv" firstAttribute="centerX" secondItem="G5a-xX-8Uc" secondAttribute="centerX" id="33l-Jj-ZH5"/>
                                 <constraint firstItem="G5a-xX-8Uc" firstAttribute="centerX" secondItem="STw-dH-xK3" secondAttribute="centerX" id="5Pl-Wi-nQS"/>
                                 <constraint firstItem="llR-lw-I3e" firstAttribute="top" secondItem="DMT-Gr-ucv" secondAttribute="bottom" constant="14" id="7e8-qu-iRx"/>
-                                <constraint firstItem="PMs-Kj-3Ae" firstAttribute="height" secondItem="DMT-Gr-ucv" secondAttribute="height" multiplier="4/7" id="9Yz-E3-hea"/>
                                 <constraint firstItem="G5a-xX-8Uc" firstAttribute="top" secondItem="VYs-pS-1GX" secondAttribute="bottom" constant="32" id="AHy-YJ-Dhe"/>
+                                <constraint firstItem="DMT-Gr-ucv" firstAttribute="trailing" secondItem="5z6-UZ-an0" secondAttribute="trailing" constant="5" id="GYn-Rs-9YL"/>
+                                <constraint firstItem="6w7-zG-rvL" firstAttribute="centerY" secondItem="DMT-Gr-ucv" secondAttribute="centerY" id="Lqc-6p-NdF"/>
                                 <constraint firstItem="Q74-KF-07d" firstAttribute="centerX" secondItem="DZZ-1x-oNY" secondAttribute="centerX" id="MxC-Y8-BHO"/>
-                                <constraint firstItem="DMT-Gr-ucv" firstAttribute="trailing" secondItem="PMs-Kj-3Ae" secondAttribute="trailing" id="Q1I-uA-bIl"/>
+                                <constraint firstItem="6w7-zG-rvL" firstAttribute="width" secondItem="DMT-Gr-ucv" secondAttribute="height" multiplier="1:1" id="NCg-vC-f4V"/>
                                 <constraint firstItem="Q74-KF-07d" firstAttribute="leading" secondItem="DMT-Gr-ucv" secondAttribute="leading" id="QLK-W5-JiR"/>
-                                <constraint firstItem="DMT-Gr-ucv" firstAttribute="trailing" secondItem="Ddf-gM-Rtr" secondAttribute="trailing" constant="10" id="R1S-qP-yWN"/>
+                                <constraint firstItem="DMT-Gr-ucv" firstAttribute="bottom" secondItem="5z6-UZ-an0" secondAttribute="bottom" constant="10" id="SSS-Z3-pZf"/>
                                 <constraint firstItem="DMT-Gr-ucv" firstAttribute="leading" secondItem="G5a-xX-8Uc" secondAttribute="leading" id="X1r-JC-cgV"/>
                                 <constraint firstItem="Q74-KF-07d" firstAttribute="top" secondItem="llR-lw-I3e" secondAttribute="bottom" constant="25" id="YTT-vz-W4w"/>
-                                <constraint firstItem="Ddf-gM-Rtr" firstAttribute="centerY" secondItem="DMT-Gr-ucv" secondAttribute="centerY" id="bBY-0x-q0m"/>
                                 <constraint firstItem="llR-lw-I3e" firstAttribute="leading" secondItem="G5a-xX-8Uc" secondAttribute="leading" id="cBH-nW-MMu"/>
                                 <constraint firstItem="DMT-Gr-ucv" firstAttribute="top" secondItem="G5a-xX-8Uc" secondAttribute="bottom" constant="18" id="cQA-iZ-YBJ"/>
                                 <constraint firstItem="VYs-pS-1GX" firstAttribute="top" secondItem="DZZ-1x-oNY" secondAttribute="top" constant="8" id="h4Y-rb-qUa"/>
                                 <constraint firstItem="3xB-PI-09D" firstAttribute="leading" secondItem="llR-lw-I3e" secondAttribute="trailing" constant="10" id="juG-dZ-EPR"/>
                                 <constraint firstItem="VYs-pS-1GX" firstAttribute="leading" secondItem="G5a-xX-8Uc" secondAttribute="leading" id="ohb-Yk-vj8"/>
-                                <constraint firstItem="PMs-Kj-3Ae" firstAttribute="centerY" secondItem="DMT-Gr-ucv" secondAttribute="centerY" id="p13-UI-RoK"/>
+                                <constraint firstItem="6w7-zG-rvL" firstAttribute="trailing" secondItem="DMT-Gr-ucv" secondAttribute="trailing" id="qPb-s8-d5Z"/>
                                 <constraint firstAttribute="height" constant="270" id="tl6-9h-cOY"/>
                                 <constraint firstItem="G5a-xX-8Uc" firstAttribute="leading" secondItem="STw-dH-xK3" secondAttribute="leading" constant="16" id="xNl-2q-LHa"/>
+                                <constraint firstItem="6w7-zG-rvL" firstAttribute="height" secondItem="DMT-Gr-ucv" secondAttribute="height" constant="-2" id="yQY-h3-nlh"/>
                                 <constraint firstItem="3xB-PI-09D" firstAttribute="centerY" secondItem="llR-lw-I3e" secondAttribute="centerY" id="ztJ-h3-cjX"/>
                             </constraints>
                             <viewLayoutGuide key="safeArea" id="STw-dH-xK3"/>
-                            <variation key="default">
-                                <mask key="subviews">
-                                    <exclude reference="PMs-Kj-3Ae"/>
-                                </mask>
-                            </variation>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

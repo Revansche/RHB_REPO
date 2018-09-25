@@ -1,5 +1,5 @@
 //
-//  RhbLoginViewController.swift
+//  RHBLoginViewController.swift
 //  rhb registration
 //
 //  Created by Ghean Ginanjar on 17/09/18.
@@ -9,12 +9,13 @@
 import UIKit
 import JGProgressHUD
 
-class RhbLoginViewController: UIViewController {
+class RHBLoginViewController: UIViewController {
   
   @IBOutlet weak var contentView: UIView!
-  @IBOutlet weak var emailTextField: RhbUnderlinedTextField!
-  @IBOutlet weak var passwordTextField: RhbUnderlinedTextField!
-  @IBOutlet weak var checkboxButton: RhbCheckBoxButton!
+  @IBOutlet weak var emailTextField: RHBUnderlinedTextField!
+  @IBOutlet weak var passwordTextField: RHBUnderlinedTextField!
+  @IBOutlet weak var checkboxButton: RHBCheckBoxButton!
+  @IBOutlet weak var eyeIcon: UIImageView!
   
   var hud: JGProgressHUD!
 
@@ -27,7 +28,8 @@ class RhbLoginViewController: UIViewController {
   }
   
   override func viewWillAppear(_ animated: Bool) {
-    setupNavigationBar(title: "Login", backButtonItem: nil, optionalButtonItem: nil)
+    setupNavigationBar(title: "Login", optionalButtonItem: nil)
+    navigationItem.hidesBackButton = true
   }
   
   @IBAction func loginButtonTapped(_ sender: Any) {
@@ -104,7 +106,7 @@ class RhbLoginViewController: UIViewController {
   }
 }
 
-extension RhbLoginViewController: UITextFieldDelegate {
+extension RHBLoginViewController: UITextFieldDelegate {
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     if textField.tag == 0 {
       let passField = view.viewWithTag(1) as! UITextField
@@ -116,7 +118,7 @@ extension RhbLoginViewController: UITextFieldDelegate {
   }
 }
 
-extension RhbLoginViewController: RhbCheckBoxButtonDelegate {
+extension RHBLoginViewController: RHBCheckBoxButtonDelegate {
   func selectedStateChanged(withValue isSelected: Bool) {
     print("if true, should store user account to the local data")
     print(( isSelected ? "True" : "False" ))

@@ -33,13 +33,14 @@ class RegisterInfoViewController: UIViewController {
 
 extension RegisterInfoViewController: RHBChoiceSegmentViewDelegate {
   func didTapLeftButton() {
-//    let preRegView = FinalPreRegistrationViewController()
     let preRegView = PreRegisterFormViewController()
+    let backButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    navigationItem.backBarButtonItem = backButton
     self.navigationController?.pushViewController(preRegView, animated: true)
   }
   
   func didTapRightButton() {
-    let loginView = RhbLoginViewController()
+    let loginView = RHBLoginViewController()    
     self.navigationController?.pushViewController(loginView, animated: true)
   }
 }

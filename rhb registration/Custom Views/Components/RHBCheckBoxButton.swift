@@ -1,5 +1,5 @@
 //
-//  RhbCheckBoxButton.swift
+//  RHBCheckBoxButton.swift
 //  rhb registration
 //
 //  Created by Ghean Ginanjar on 17/09/18.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-protocol RhbCheckBoxButtonDelegate: class {
+protocol RHBCheckBoxButtonDelegate: class {
   func selectedStateChanged(withValue isSelected: Bool)
 }
 
 @IBDesignable
-class RhbCheckBoxButton: UIButton {
+class RHBCheckBoxButton: UIButton {
   
-  weak var delegate: RhbCheckBoxButtonDelegate?
+  weak var delegate: RHBCheckBoxButtonDelegate?
   
   fileprivate var isCheckboxSelected: Bool = false {
     didSet {
