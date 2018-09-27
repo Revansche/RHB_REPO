@@ -10,9 +10,12 @@ import UIKit
 
 class PreRegistrationCompleteViewController: UIViewController {
 
-    override func viewDidLoad() {
+  @IBOutlet weak var fillFormOptionSegment: RHBChoiceSegmentView!
+  
+  override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar(title: "Pre-Registration", optionalButtonItem: nil)
+        fillFormOptionSegment.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,4 +34,17 @@ class PreRegistrationCompleteViewController: UIViewController {
     }
     */
 
+}
+
+extension PreRegistrationCompleteViewController: RHBChoiceSegmentViewDelegate {
+  func didTapLeftButton() {
+    
+  }
+  
+  func didTapRightButton() {
+    let registrationFormVC = RegistrationFormViewController()
+    let backButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    navigationItem.backBarButtonItem = backButton
+    self.navigationController?.pushViewController(registrationFormVC, animated: true)
+  }
 }

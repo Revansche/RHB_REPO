@@ -66,7 +66,7 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
     @IBOutlet weak var investOthersButton: UIButton!
     var investButtons: [UIButton]!
     
-    var formData: FormData!
+    var formData: FormData?
     var pickerTrigger: PersonalInfoPicker!
     var provinceSelected: String!
     
@@ -96,20 +96,20 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
     @IBAction func processBtnTap(_ sender: Any) {
         
         // Personal Info
-        formData.tgl_lahir = dateBirthTF.text! // 1987-05-12
-        formData.tempat_lahir = placeBirthTF.text!
-        formData.alamat_identitas = streetTF.text!
-        formData.kodepos_identitas = postalCodeTF.text!
-        formData.no_telp_rumah = homePhoneTF.text!
+        formData?.tgl_lahir = dateBirthTF.text! // 1987-05-12
+        formData?.tempat_lahir = placeBirthTF.text!
+        formData?.alamat_identitas = streetTF.text!
+        formData?.kodepos_identitas = postalCodeTF.text!
+        formData?.no_telp_rumah = homePhoneTF.text!
         
         // Emergency data
-        formData.emergency_contact_name = emergencyNameTF.text!
-        formData.emergency_contact_phone = emergencyPhoneTF.text!
+        formData?.emergency_contact_name = emergencyNameTF.text!
+        formData?.emergency_contact_phone = emergencyPhoneTF.text!
         
         // Bank Info
-        formData.cabang_bank = bankHolderNameTF.text!
-        formData.nomor_rekening = bankAccountNumberTF.text!
-        formData.currency_rdi = mataUangTF.text!
+        formData?.cabang_bank = bankHolderNameTF.text!
+        formData?.nomor_rekening = bankAccountNumberTF.text!
+        formData?.currency_rdi = mataUangTF.text!
         
         Constants.setFormData(withFormData: formData)
         
@@ -206,7 +206,7 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
     
     // MARK: - MARITAL ACTION
     private func setMaritalButtonAction() {
-        formData.status_perkawinan = "1"
+        formData?.status_perkawinan = "1"
         maritalMarriedButton.addTarget(self, action: #selector(maritalButtonAction), for: .touchUpInside)
         maritalSingleButton.addTarget(self, action: #selector(maritalButtonAction), for: .touchUpInside)
         maritalDivorcedButton.addTarget(self, action: #selector(maritalButtonAction), for: .touchUpInside)
@@ -216,14 +216,14 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
     @objc func maritalButtonAction(_ sender: UIButton) {
         sender.isSelected = true
         if sender == maritalSingleButton {
-            formData.status_perkawinan = "1"
-            formData.status_perkawinan_string = "Single"
+            formData?.status_perkawinan = "1"
+            formData?.status_perkawinan_string = "Single"
         } else if sender == maritalMarriedButton {
-            formData.status_perkawinan = "2"
-            formData.status_perkawinan_string = "Married"
+            formData?.status_perkawinan = "2"
+            formData?.status_perkawinan_string = "Married"
         } else {
-            formData.status_perkawinan = "3"
-            formData.status_perkawinan_string = "Divorced"
+            formData?.status_perkawinan = "3"
+            formData?.status_perkawinan_string = "Divorced"
         }
         
         for item in maritalButtons {
@@ -237,7 +237,7 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
     
     // MARK: - GENDER ACTION
     private func setGenderButtonAction() {
-        formData.jenis_kelamin = "1"
+        formData?.jenis_kelamin = "1"
         genderManButton.addTarget(self, action: #selector(genderButtonAction), for: .touchUpInside)
         genderWomanButton.addTarget(self, action: #selector(genderButtonAction), for: .touchUpInside)
         genderButtons = [genderManButton, genderWomanButton]
@@ -246,11 +246,11 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
     @objc func genderButtonAction(_ sender: UIButton) {
         sender.isSelected = true
         if sender == genderManButton {
-            formData.jenis_kelamin_string = "Laki-laki"
-            formData.jenis_kelamin = "1"
+            formData?.jenis_kelamin_string = "Laki-laki"
+            formData?.jenis_kelamin = "1"
         }else{
-            formData.jenis_kelamin_string = "Perempuan"
-            formData.jenis_kelamin = "2"
+            formData?.jenis_kelamin_string = "Perempuan"
+            formData?.jenis_kelamin = "2"
         }
         
         for item in genderButtons {
@@ -264,8 +264,8 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
     
     // MARK: - HOME ACTION
     private func setHomeButtonAction() {
-        formData.kepemilikan_rmh = "1"
-        formData.kepemilikan_rmh_string = "Family own"
+        formData?.kepemilikan_rmh = "1"
+        formData?.kepemilikan_rmh_string = "Family own"
         homeOwnButton.addTarget(self, action: #selector(homeButtonAction), for: .touchUpInside)
         homeFamilyOwnButton.addTarget(self, action: #selector(homeButtonAction), for: .touchUpInside)
         homeOthersButton.addTarget(self, action: #selector(homeButtonAction), for: .touchUpInside)
@@ -275,14 +275,14 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
     @objc func homeButtonAction(_ sender: UIButton) {
         sender.isSelected = true
         if sender == homeOwnButton {
-            formData.kepemilikan_rmh = "2"
-            formData.kepemilikan_rmh_string = "My own"
+            formData?.kepemilikan_rmh = "2"
+            formData?.kepemilikan_rmh_string = "My own"
         } else if sender == homeFamilyOwnButton {
-            formData.kepemilikan_rmh = "1"
-            formData.kepemilikan_rmh_string = "Family own"
+            formData?.kepemilikan_rmh = "1"
+            formData?.kepemilikan_rmh_string = "Family own"
         } else{
-            formData.kepemilikan_rmh = "3"
-            formData.kepemilikan_rmh_string = "Others"
+            formData?.kepemilikan_rmh = "3"
+            formData?.kepemilikan_rmh_string = "Others"
         }
         
         for item in homeButtons {
@@ -297,8 +297,8 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
     
     // MARK: - EDUCATION ACTION
     private func setEducationButtonAction() {
-        formData.pendidikan = "1"
-        formData.pendidikan_string = "High School"
+        formData?.pendidikan = "1"
+        formData?.pendidikan_string = "High School"
         eduOthersButton.addTarget(self, action: #selector(educationButtonAction), for: .touchUpInside)
         eduGraduateButton.addTarget(self, action: #selector(educationButtonAction), for: .touchUpInside)
         eduHighSchoolButton.addTarget(self, action: #selector(educationButtonAction), for: .touchUpInside)
@@ -307,20 +307,20 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
     }
     
     @objc func educationButtonAction(_ sender: UIButton) {
-        formData.pendidikan = "1"
+        formData?.pendidikan = "1"
         sender.isSelected = true
         if sender == eduGraduateButton {
-            formData.pendidikan = "2"
-            formData.pendidikan_string = "Graduate"
+            formData?.pendidikan = "2"
+            formData?.pendidikan_string = "Graduate"
         } else if sender == eduHighSchoolButton {
-            formData.pendidikan = "1"
-            formData.pendidikan_string = "High School"
+            formData?.pendidikan = "1"
+            formData?.pendidikan_string = "High School"
         } else if sender == eduPostGraduateButton {
-            formData.pendidikan = "3"
-            formData.pendidikan_string = "Post graduate"
+            formData?.pendidikan = "3"
+            formData?.pendidikan_string = "Post graduate"
         } else{
-            formData.pendidikan = "4"
-            formData.pendidikan_string = "Others"
+            formData?.pendidikan = "4"
+            formData?.pendidikan_string = "Others"
         }
         
         for item in eduButtons {
@@ -335,8 +335,8 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
     
     // MARK: - INVESTMENT ACTION
     private func setInvestButtonAction() {
-        formData.tujuan_investasi = "1"
-        formData.tujuan_investasi_string = "Long term investment"
+        formData?.tujuan_investasi = "1"
+        formData?.tujuan_investasi_string = "Long term investment"
         investLongButton.addTarget(self, action: #selector(investmentButtonAction), for: .touchUpInside)
         investIncomeButton.addTarget(self, action: #selector(investmentButtonAction), for: .touchUpInside)
         investPriceApprButton.addTarget(self, action: #selector(investmentButtonAction), for: .touchUpInside)
@@ -348,20 +348,20 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
     @objc func investmentButtonAction(_ sender: UIButton) {
         sender.isSelected = true
         if sender == investPriceApprButton {
-            formData.tujuan_investasi = "1"
-            formData.tujuan_investasi_string = "Price appreciation"
+            formData?.tujuan_investasi = "1"
+            formData?.tujuan_investasi_string = "Price appreciation"
         } else if sender == investSpeculationButton {
-            formData.tujuan_investasi = "2"
-            formData.tujuan_investasi_string = "Speculation"
+            formData?.tujuan_investasi = "2"
+            formData?.tujuan_investasi_string = "Speculation"
         } else if sender == investIncomeButton {
-            formData.tujuan_investasi = "3"
-            formData.tujuan_investasi_string = "Income"
+            formData?.tujuan_investasi = "3"
+            formData?.tujuan_investasi_string = "Income"
         } else if sender == investLongButton {
-            formData.tujuan_investasi = "4"
-            formData.tujuan_investasi_string = "Long term investment"
+            formData?.tujuan_investasi = "4"
+            formData?.tujuan_investasi_string = "Long term investment"
         } else{
-            formData.tujuan_investasi = "5"
-            formData.tujuan_investasi_string = "Others"
+            formData?.tujuan_investasi = "5"
+            formData?.tujuan_investasi_string = "Others"
         }
         
         for item in investButtons {
@@ -425,28 +425,28 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
         switch pickerTrigger! {
         case .state:
             provinceSelected = data.id
-            formData.provinsi_identitas = data.title
-            formData.kabupaten_identitas = ""
+            formData?.provinsi_identitas = data.title
+            formData?.kabupaten_identitas = ""
             stateButton.setTitle(data.title, for: .normal)
             cityButton.setTitle("", for: .normal)
         case .city:
-            formData.kabupaten_identitas = data.title
+            formData?.kabupaten_identitas = data.title
             cityButton.setTitle(data.title, for: .normal)
         case .religion:
-            formData.agama = data.id
-            formData.agama_string = data.title
+            formData?.agama = data.id
+            formData?.agama_string = data.title
             agamaButton.setTitle(data.title, for: .normal)
         case .relationship:
-            formData.emergency_contact_relationship = data.title
+            formData?.emergency_contact_relationship = data.title
             relationshipButton.setTitle(data.title, for: .normal)
         case .bank:
-            formData.nama_bank = data.title
+            formData?.nama_bank = data.title
             namaBankButton.setTitle(data.title, for: .normal)
         case .bankcountry:
-            formData.negara_bank = data.title
+            formData?.negara_bank = data.title
             bankCountryButton.setTitle(data.title, for: .normal)
         case .rdibank:
-            formData.bank_rdi = data.title
+            formData?.bank_rdi = data.title
             bankRDIButton.setTitle(data.title, for: .normal)
 //        case .none:
 //            break

@@ -67,6 +67,11 @@
 		4E86048F2109CD4E00019F77 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86048D2109CD4E00019F77 /* PickerViewController.swift */; };
 		4E8604902109CD4E00019F77 /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E86048E2109CD4E00019F77 /* PickerViewController.xib */; };
 		4E8604922109D4CB00019F77 /* PickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8604912109D4CB00019F77 /* PickerModel.swift */; };
+		94155FC7215C973C0054BA25 /* RHBProgressSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94155FC6215C973C0054BA25 /* RHBProgressSegmentView.swift */; };
+		94155FCA215CE2620054BA25 /* RHBFormKTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94155FC8215CE2620054BA25 /* RHBFormKTPViewController.swift */; };
+		94155FCB215CE2620054BA25 /* RHBFormKTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94155FC9215CE2620054BA25 /* RHBFormKTPViewController.xib */; };
+		94155FCE215CE2770054BA25 /* RHBFormNPWPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94155FCC215CE2770054BA25 /* RHBFormNPWPViewController.swift */; };
+		94155FCF215CE2770054BA25 /* RHBFormNPWPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94155FCD215CE2770054BA25 /* RHBFormNPWPViewController.xib */; };
 		9418E75C2157ECA300AD3B7E /* PreRegisterFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9418E75A2157ECA300AD3B7E /* PreRegisterFormViewController.swift */; };
 		9418E75D2157ECA300AD3B7E /* PreRegisterFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9418E75B2157ECA300AD3B7E /* PreRegisterFormViewController.xib */; };
 		94D4E5AF214CB18600DB15BB /* MLOLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D4E5AE214CB18500DB15BB /* MLOLabel.swift */; };
@@ -166,6 +171,11 @@
 		57A2D2AFBC107D533FD46F1D /* Pods_rhb_registrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rhb_registrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5949E0510C1DECB6F701332C /* Pods_rhb_registrationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rhb_registrationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79297CEBF7C22294F13CD6EE /* Pods-rhb registrationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rhb registrationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rhb registrationUITests/Pods-rhb registrationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		94155FC6215C973C0054BA25 /* RHBProgressSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHBProgressSegmentView.swift; sourceTree = "<group>"; };
+		94155FC8215CE2620054BA25 /* RHBFormKTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHBFormKTPViewController.swift; sourceTree = "<group>"; };
+		94155FC9215CE2620054BA25 /* RHBFormKTPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHBFormKTPViewController.xib; sourceTree = "<group>"; };
+		94155FCC215CE2770054BA25 /* RHBFormNPWPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHBFormNPWPViewController.swift; sourceTree = "<group>"; };
+		94155FCD215CE2770054BA25 /* RHBFormNPWPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHBFormNPWPViewController.xib; sourceTree = "<group>"; };
 		9418E75A2157ECA300AD3B7E /* PreRegisterFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreRegisterFormViewController.swift; sourceTree = "<group>"; };
 		9418E75B2157ECA300AD3B7E /* PreRegisterFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreRegisterFormViewController.xib; sourceTree = "<group>"; };
 		94D4E5AE214CB18500DB15BB /* MLOLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLOLabel.swift; sourceTree = "<group>"; };
@@ -365,6 +375,10 @@
 			children = (
 				4E6A415C20FF6E4300D9B2DE /* RegistrationFormViewController.swift */,
 				4E6A415D20FF6E4300D9B2DE /* RegistrationFormViewController.xib */,
+				94155FC8215CE2620054BA25 /* RHBFormKTPViewController.swift */,
+				94155FC9215CE2620054BA25 /* RHBFormKTPViewController.xib */,
+				94155FCC215CE2770054BA25 /* RHBFormNPWPViewController.swift */,
+				94155FCD215CE2770054BA25 /* RHBFormNPWPViewController.xib */,
 			);
 			path = "Registration Form";
 			sourceTree = "<group>";
@@ -494,6 +508,7 @@
 			children = (
 				94D4E5B5214D7ECC00DB15BB /* RHBChoiceSegmentView.swift */,
 				94D4E5B7214D81D100DB15BB /* RHBChoiceSegmentView.xib */,
+				94155FC6215C973C0054BA25 /* RHBProgressSegmentView.swift */,
 			);
 			path = "Custom Controls";
 			sourceTree = "<group>";
@@ -621,6 +636,7 @@
 			files = (
 				94D4E5B8214D81D100DB15BB /* RHBChoiceSegmentView.xib in Resources */,
 				4E6A416E20FF9EE200D9B2DE /* ProfileRiskViewController.xib in Resources */,
+				94155FCF215CE2770054BA25 /* RHBFormNPWPViewController.xib in Resources */,
 				4E822E1E210366EC0087E942 /* SignatureFormViewController.xib in Resources */,
 				9418E75D2157ECA300AD3B7E /* PreRegisterFormViewController.xib in Resources */,
 				4E6A416420FF9D0900D9B2DE /* PersonalnfoViewController.xib in Resources */,
@@ -634,6 +650,7 @@
 				4E6A417320FF9F2600D9B2DE /* RegistrationSummaryViewController.xib in Resources */,
 				4E8604902109CD4E00019F77 /* PickerViewController.xib in Resources */,
 				268D47D02158D86B00CEAFE9 /* RHBPreRegisterOTPViewController.xib in Resources */,
+				94155FCB215CE2620054BA25 /* RHBFormKTPViewController.xib in Resources */,
 				94D4E5C0214EC6D200DB15BB /* RHBLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -760,6 +777,7 @@
 				4E8604712109880A00019F77 /* Country.swift in Sources */,
 				268D47D22158DD9700CEAFE9 /* SecurityCodeInputView.swift in Sources */,
 				4E86046F2109875E00019F77 /* Bank.swift in Sources */,
+				94155FCE215CE2770054BA25 /* RHBFormNPWPViewController.swift in Sources */,
 				4E5675B420D92B4000115457 /* ViewController.swift in Sources */,
 				4E8604752109892500019F77 /* Province.swift in Sources */,
 				94D4E5BA214EB26900DB15BB /* RHBUnderlinedTextField.swift in Sources */,
@@ -771,6 +789,7 @@
 				4E86048B2109BAB600019F77 /* BusinessType.swift in Sources */,
 				4E822E2A210434320087E942 /* Constants.swift in Sources */,
 				4E63BAFC210C1A40002239E5 /* FormData.swift in Sources */,
+				94155FCA215CE2620054BA25 /* RHBFormKTPViewController.swift in Sources */,
 				4E86048721098C0C00019F77 /* Relationship.swift in Sources */,
 				94D4E5C2214ECD3F00DB15BB /* RHBCheckBoxButton.swift in Sources */,
 				4E6A416320FF9D0900D9B2DE /* PersonalnfoViewController.swift in Sources */,
@@ -785,6 +804,7 @@
 				4E86047921098A0A00019F77 /* Jabatan.swift in Sources */,
 				4E6A416820FF9E8800D9B2DE /* WorkInfoViewController.swift in Sources */,
 				4E6A415320FF64E000D9B2DE /* UIColorExtension.swift in Sources */,
+				94155FC7215C973C0054BA25 /* RHBProgressSegmentView.swift in Sources */,
 				4E822E22210374160087E942 /* YPDrawSignatureView.swift in Sources */,
 				4E5675F720D92D7000115457 /* RegisterInfoViewController.swift in Sources */,
 				4E5675B220D92B4000115457 /* AppDelegate.swift in Sources */,
