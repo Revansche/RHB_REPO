@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RHBCitizenshipContainerView" customModule="rhb_registration" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Citizenship / Kewarganegaraan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TT-31-UNf">
+                    <rect key="frame" x="0.0" y="0.0" width="167" height="14"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="T7S-WX-KQQ">
+                    <rect key="frame" x="0.0" y="14" width="325" height="86"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNn-17-5bs" userLabel="First">
+                            <rect key="frame" x="0.0" y="0.0" width="325" height="43"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXb-hc-oGO">
+                                    <rect key="frame" x="0.0" y="7.5" width="115" height="28"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="115" id="HgG-YL-pfo"/>
+                                        <constraint firstAttribute="height" constant="28" id="ciF-9F-TjA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="Indonesian" image="1-1-btn-check-empty">
+                                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <state key="selected" title="Indonesian" image="1-2-btn-check-selected"/>
+                                    <connections>
+                                        <action selector="localeButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="stQ-Cb-U4Q"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="YXb-hc-oGO" firstAttribute="centerY" secondItem="jNn-17-5bs" secondAttribute="centerY" id="DVc-IP-5cb"/>
+                                <constraint firstItem="YXb-hc-oGO" firstAttribute="leading" secondItem="jNn-17-5bs" secondAttribute="leading" id="New-7O-8BY"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pzn-6E-ifh" userLabel="Second">
+                            <rect key="frame" x="0.0" y="43" width="325" height="43"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3L3-aC-QrW">
+                                    <rect key="frame" x="0.0" y="7.5" width="115" height="28"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="115" id="9Ql-yM-req"/>
+                                        <constraint firstAttribute="height" constant="28" id="TfL-Kl-WAx"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="Foreign" image="1-1-btn-check-empty">
+                                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <state key="selected" title="Foreign" image="1-2-btn-check-selected"/>
+                                    <connections>
+                                        <action selector="foreignButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZIS-rq-FYO"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kXa-5c-bgA" customClass="CustomView" customModule="rhb_registration" customModuleProvider="target">
+                                    <rect key="frame" x="118" y="1.5" width="207" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indonesia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtW-89-wia">
+                                            <rect key="frame" x="8" y="11.5" width="157" height="17"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="17" id="cJg-u2-9w0"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="KGw-8h-TnS">
+                                            <rect key="frame" x="173" y="5" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="4ch-DW-LKR"/>
+                                                <constraint firstAttribute="width" constant="30" id="Apo-c9-GG5"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="LzV-GP-nnw"/>
+                                                <constraint firstAttribute="height" constant="30" id="Nyt-5g-1vT"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="KGw-8h-TnS" firstAttribute="centerY" secondItem="kXa-5c-bgA" secondAttribute="centerY" id="DPi-Q0-yqv"/>
+                                        <constraint firstAttribute="height" constant="40" id="Gf5-6R-1nE"/>
+                                        <constraint firstItem="FtW-89-wia" firstAttribute="centerY" secondItem="kXa-5c-bgA" secondAttribute="centerY" id="Kyt-tc-w9Z"/>
+                                        <constraint firstAttribute="trailing" secondItem="KGw-8h-TnS" secondAttribute="trailing" constant="4" id="LKi-GA-Wkk"/>
+                                        <constraint firstItem="KGw-8h-TnS" firstAttribute="centerY" secondItem="kXa-5c-bgA" secondAttribute="centerY" id="M0v-qA-28b"/>
+                                        <constraint firstItem="KGw-8h-TnS" firstAttribute="leading" secondItem="FtW-89-wia" secondAttribute="trailing" constant="8" id="SE9-sZ-B5p"/>
+                                        <constraint firstItem="FtW-89-wia" firstAttribute="leading" secondItem="kXa-5c-bgA" secondAttribute="leading" constant="8" id="U10-sq-pl1"/>
+                                        <constraint firstAttribute="trailing" secondItem="KGw-8h-TnS" secondAttribute="trailing" constant="4" id="gZi-MG-i86"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="borderColor" value="#e3e3e3"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isBorderBottom" value="NO"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="3L3-aC-QrW" firstAttribute="centerY" secondItem="pzn-6E-ifh" secondAttribute="centerY" id="Eif-Ag-x3u"/>
+                                <constraint firstItem="kXa-5c-bgA" firstAttribute="centerY" secondItem="pzn-6E-ifh" secondAttribute="centerY" id="QYn-Hz-Sso"/>
+                                <constraint firstAttribute="trailing" secondItem="kXa-5c-bgA" secondAttribute="trailing" id="ZlO-g5-G0p"/>
+                                <constraint firstItem="kXa-5c-bgA" firstAttribute="leading" secondItem="3L3-aC-QrW" secondAttribute="trailing" constant="3" id="hO3-i6-ZU7"/>
+                                <constraint firstItem="3L3-aC-QrW" firstAttribute="leading" secondItem="pzn-6E-ifh" secondAttribute="leading" id="ya8-Q8-Dyg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="pzn-6E-ifh" secondAttribute="bottom" id="8Yq-4b-hiD"/>
+                        <constraint firstItem="jNn-17-5bs" firstAttribute="top" secondItem="T7S-WX-KQQ" secondAttribute="top" id="Und-BN-xaL"/>
+                        <constraint firstItem="pzn-6E-ifh" firstAttribute="top" secondItem="jNn-17-5bs" secondAttribute="bottom" id="pUL-sW-lgt"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="T7S-WX-KQQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4Rc-57-eIC"/>
+                <constraint firstItem="T7S-WX-KQQ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="EZE-NT-jrN"/>
+                <constraint firstItem="T7S-WX-KQQ" firstAttribute="top" secondItem="6TT-31-UNf" secondAttribute="bottom" id="Leo-sf-eFu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="T7S-WX-KQQ" secondAttribute="bottom" id="cL4-nK-9bL"/>
+                <constraint firstItem="6TT-31-UNf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="esr-Po-i82"/>
+                <constraint firstItem="6TT-31-UNf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gf6-9G-a0h"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="countryLabel" destination="FtW-89-wia" id="h8e-Xi-R2t"/>
+                <outlet property="foreignButton" destination="3L3-aC-QrW" id="WfF-A9-47b"/>
+                <outlet property="localeButton" destination="YXb-hc-oGO" id="d55-HX-3UI"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="1-1-btn-check-empty" width="20" height="20"/>
+        <image name="1-2-btn-check-selected" width="20" height="20"/>
+        <image name="ic_arrow_bottom" width="8" height="5"/>
+    </resources>
+</document>

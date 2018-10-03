@@ -61,12 +61,6 @@
                                         <userDefinedRuntimeAttribute type="number" keyPath="underLineWidth">
                                             <real key="value" value="1"/>
                                         </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="placeholderInsetX">
-                                            <real key="value" value="0.0"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="placeholderInsetY">
-                                            <real key="value" value="3"/>
-                                        </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                                 <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="DMT-Gr-ucv" customClass="RHBUnderlinedTextField" customModule="rhb_registration" customModuleProvider="target">
@@ -104,20 +98,20 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llR-lw-I3e" userLabel="Checkbox" customClass="RHBCheckBoxButton" customModule="rhb_registration" customModuleProvider="target">
-                                    <rect key="frame" x="16" y="184" width="22" height="22"/>
+                                    <rect key="frame" x="16" y="184" width="22" height="34"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="22" id="5gM-ub-Sau"/>
                                     </constraints>
                                     <state key="normal" title="Button"/>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xB-PI-09D">
-                                    <rect key="frame" x="48" y="186.5" width="94" height="17"/>
+                                    <rect key="frame" x="48" y="192.5" width="94" height="17"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <color key="textColor" red="0.36881510416666669" green="0.38974896599264702" blue="0.45610894097222221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q74-KF-07d" userLabel="Login Button" customClass="CustomButton" customModule="rhb_registration" customModuleProvider="target">
-                                    <rect key="frame" x="16" y="231" width="311" height="33"/>
+                                    <rect key="frame" x="16" y="243" width="311" height="33"/>
                                     <color key="backgroundColor" red="0.074509803920000006" green="0.36862745099999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="33" id="ktP-bN-scA"/>

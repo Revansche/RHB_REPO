@@ -33,6 +33,10 @@ class Colors: NSObject {
   static var rhbMainBlue: UIColor {
     return UIColor(red: (19/255.0), green: (94/255.0), blue: (170/255.0), alpha: 1)
   }
+  
+  static var rhbMainBluePale: UIColor {
+    return UIColor(red: (88/255.0), green: (128/255.0), blue: (164/255.0), alpha: 1)
+  }
 }
 
 class DeviceOrientation: NSObject {

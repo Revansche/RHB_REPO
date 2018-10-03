@@ -1,22 +1,155 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RHBFormKTPViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RHBFormKTPViewController" customModule="rhb_registration" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aoz-9G-mFd" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a-1-splashScreen-top-banner" translatesAutoresizingMaskIntoConstraints="NO" id="9PI-cO-6fU" userLabel="Rhb Color Line">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="10" id="QGy-OS-KYl"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k7R-g6-seL">
+                            <rect key="frame" x="10" y="25" width="300" height="42"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="CwX-kk-AYw"/>
+                            </constraints>
+                            <string key="text">Agar dapat menggunakan keseluruhan fitur aplikasi ini anda wajib memiliki Rekening Dana Investor serta Single Investor Identification yang menjadi syarat utama untuk bertransaksi dan berinvestasi di Bursa Efek Indonesia. Mohon siapkan E-KTP serta NPWP anda sebagai kelengkapan utama registrasi akun melalui RHB Sekuritas Indonesia Demi kenyamanan proses pengisian e-form ini, gunakan jaringan Wi-Fi anda</string>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="8"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lengkapi Form Registrasi Anda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOM-db-tK6">
+                            <rect key="frame" x="25" y="92" width="224.5" height="19"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="19" id="Ie0-mn-XGo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.16078431369999999" green="0.37254901959999998" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masukan Nomor E-KTP Anda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kY4-wl-ZFv">
+                            <rect key="frame" x="25" y="113" width="158.5" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="ZRP-Zf-l5F"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="px9-bL-ubF" customClass="CustomView" customModule="rhb_registration" customModuleProvider="target">
+                            <rect key="frame" x="25" y="130" width="270" height="40"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="eKTP ID Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PbM-Ff-s2d">
+                                    <rect key="frame" x="8" y="5" width="254" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="GL3-n2-Dp3"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="PbM-Ff-s2d" firstAttribute="centerY" secondItem="px9-bL-ubF" secondAttribute="centerY" id="8sJ-fZ-U6s"/>
+                                <constraint firstAttribute="trailing" secondItem="PbM-Ff-s2d" secondAttribute="trailing" constant="8" id="Kjz-F3-fJA"/>
+                                <constraint firstAttribute="height" constant="40" id="P9G-eO-K5V"/>
+                                <constraint firstItem="PbM-Ff-s2d" firstAttribute="leading" secondItem="px9-bL-ubF" secondAttribute="leading" constant="8" id="aCd-hn-1BO"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="borderColor" value="#e3e3e3"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isBorderBottom" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oxi-rb-mD4" customClass="RHBCitizenshipContainerView" customModule="rhb_registration" customModuleProvider="target">
+                            <rect key="frame" x="25" y="178" width="270" height="90"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="1NR-bA-c7f"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOw-9V-ix8" customClass="RHBPhotoFormContainerView" customModule="rhb_registration" customModuleProvider="target">
+                            <rect key="frame" x="25" y="273" width="270" height="215"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="pnT-uH-BOe"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHH-co-u5w">
+                            <rect key="frame" x="0.0" y="498" width="320" height="50"/>
+                            <color key="backgroundColor" red="0.16078431369999999" green="0.37254901959999998" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="3Ds-QV-Uzt"/>
+                            </constraints>
+                            <state key="normal" title="NEXT">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="QOM-db-tK6" firstAttribute="top" secondItem="k7R-g6-seL" secondAttribute="bottom" constant="25" id="278-cR-enf"/>
+                        <constraint firstItem="px9-bL-ubF" firstAttribute="top" secondItem="kY4-wl-ZFv" secondAttribute="bottom" constant="3" id="3je-PY-SOz"/>
+                        <constraint firstItem="wHH-co-u5w" firstAttribute="top" secondItem="xOw-9V-ix8" secondAttribute="bottom" constant="10" id="56m-9N-nzV"/>
+                        <constraint firstItem="wHH-co-u5w" firstAttribute="leading" secondItem="Aoz-9G-mFd" secondAttribute="leading" id="5hJ-PK-xeW"/>
+                        <constraint firstItem="px9-bL-ubF" firstAttribute="leading" secondItem="QOM-db-tK6" secondAttribute="leading" id="7D7-Co-2qk"/>
+                        <constraint firstItem="Oxi-rb-mD4" firstAttribute="centerX" secondItem="px9-bL-ubF" secondAttribute="centerX" id="8CX-3e-vjE"/>
+                        <constraint firstItem="kY4-wl-ZFv" firstAttribute="leading" secondItem="QOM-db-tK6" secondAttribute="leading" id="Azc-vT-KID"/>
+                        <constraint firstItem="QOM-db-tK6" firstAttribute="leading" secondItem="Aoz-9G-mFd" secondAttribute="leading" constant="25" id="B6a-fW-K3M"/>
+                        <constraint firstItem="px9-bL-ubF" firstAttribute="centerX" secondItem="Aoz-9G-mFd" secondAttribute="centerX" id="NDz-LU-dL2"/>
+                        <constraint firstItem="kY4-wl-ZFv" firstAttribute="top" secondItem="QOM-db-tK6" secondAttribute="bottom" constant="2" id="PTo-1d-H3U"/>
+                        <constraint firstAttribute="bottom" secondItem="wHH-co-u5w" secondAttribute="bottom" id="PcX-Kk-Eec"/>
+                        <constraint firstItem="k7R-g6-seL" firstAttribute="leading" secondItem="Aoz-9G-mFd" secondAttribute="leading" constant="10" id="PeE-BL-LKh"/>
+                        <constraint firstItem="Oxi-rb-mD4" firstAttribute="leading" secondItem="px9-bL-ubF" secondAttribute="leading" id="UFt-nI-Kni"/>
+                        <constraint firstItem="9PI-cO-6fU" firstAttribute="leading" secondItem="Aoz-9G-mFd" secondAttribute="leading" id="dn7-Ql-DKs"/>
+                        <constraint firstItem="xOw-9V-ix8" firstAttribute="top" secondItem="Oxi-rb-mD4" secondAttribute="bottom" constant="5" id="hVw-oq-OsR"/>
+                        <constraint firstItem="k7R-g6-seL" firstAttribute="top" secondItem="Aoz-9G-mFd" secondAttribute="top" constant="25" id="hlq-dX-8st"/>
+                        <constraint firstItem="9PI-cO-6fU" firstAttribute="centerX" secondItem="Aoz-9G-mFd" secondAttribute="centerX" id="iB8-ic-csO"/>
+                        <constraint firstItem="xOw-9V-ix8" firstAttribute="leading" secondItem="Oxi-rb-mD4" secondAttribute="leading" id="jch-zU-99m"/>
+                        <constraint firstItem="Oxi-rb-mD4" firstAttribute="top" secondItem="px9-bL-ubF" secondAttribute="bottom" constant="8" id="lFz-GV-quK"/>
+                        <constraint firstItem="wHH-co-u5w" firstAttribute="centerX" secondItem="Aoz-9G-mFd" secondAttribute="centerX" id="qwC-4o-6P9"/>
+                        <constraint firstItem="9PI-cO-6fU" firstAttribute="top" secondItem="Aoz-9G-mFd" secondAttribute="top" id="suN-6M-k4Y"/>
+                        <constraint firstItem="xOw-9V-ix8" firstAttribute="centerX" secondItem="Aoz-9G-mFd" secondAttribute="centerX" id="t7D-fv-GCC"/>
+                        <constraint firstItem="k7R-g6-seL" firstAttribute="centerX" secondItem="Aoz-9G-mFd" secondAttribute="centerX" id="wdf-Ct-mO2"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Aoz-9G-mFd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" priority="750" id="1lw-96-nUZ"/>
+                <constraint firstItem="Aoz-9G-mFd" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="25d-Wf-ChU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Aoz-9G-mFd" secondAttribute="bottom" id="4aq-R4-5TJ"/>
+                <constraint firstItem="Aoz-9G-mFd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Z32-Aw-KKv"/>
+                <constraint firstItem="Aoz-9G-mFd" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="uMK-eV-Gu4"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
+    <resources>
+        <image name="a-1-splashScreen-top-banner" width="720" height="26"/>
+    </resources>
 </document>
