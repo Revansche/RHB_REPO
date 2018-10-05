@@ -104,7 +104,7 @@ class WorkInfoViewController: UIViewController, PickerViewDelegate {
             self.pickerTrigger = .occupation
             pickerVc.pickerViewDelegate = self
             pickerVc.pickerTitle.text = "Occupation"
-            pickerVc.getMasterData(forModel: .jobs, withSegmentID: nil)
+          pickerVc.getMasterData(forType: .jobs, withSegmentID: nil)
         })
     }
     
@@ -116,7 +116,7 @@ class WorkInfoViewController: UIViewController, PickerViewDelegate {
             self.pickerTrigger = .country
             pickerVc.pickerViewDelegate = self
             pickerVc.pickerTitle.text = "Country"
-            pickerVc.getMasterData(forModel: .negara, withSegmentID: nil)
+          pickerVc.getMasterData(forType: .negara, withSegmentID: nil)
         })
     }
     
@@ -130,7 +130,7 @@ class WorkInfoViewController: UIViewController, PickerViewDelegate {
             self.pickerTrigger = .state
             pickerVc.pickerViewDelegate = self
             pickerVc.pickerTitle.text = "State"
-            pickerVc.getMasterData(forModel: .provinsi, withSegmentID: nil)
+          pickerVc.getMasterData(forType: .provinsi, withSegmentID: nil)
         })
     }
     
@@ -142,7 +142,7 @@ class WorkInfoViewController: UIViewController, PickerViewDelegate {
             self.pickerTrigger = .city
             pickerVc.pickerViewDelegate = self
             pickerVc.pickerTitle.text = "City"
-            pickerVc.getMasterData(forModel: .kota, withSegmentID: nil)
+          pickerVc.getMasterData(forType: .kota, withSegmentID: nil)
         })
     }
     
@@ -154,7 +154,7 @@ class WorkInfoViewController: UIViewController, PickerViewDelegate {
             self.pickerTrigger = .nature_bisnis
             pickerVc.pickerViewDelegate = self
             pickerVc.pickerTitle.text = "Business Type"
-            pickerVc.getMasterData(forModel: .bisnis, withSegmentID: nil)
+          pickerVc.getMasterData(forType: .bisnis, withSegmentID: nil)
         })
     }
     
@@ -166,7 +166,7 @@ class WorkInfoViewController: UIViewController, PickerViewDelegate {
             self.pickerTrigger = .position
             pickerVc.pickerViewDelegate = self
             pickerVc.pickerTitle.text = "Position"
-            pickerVc.getMasterData(forModel: .jabatan, withSegmentID: nil)
+          pickerVc.getMasterData(forType: .jabatan, withSegmentID: nil)
         })
     }
     
@@ -178,7 +178,7 @@ class WorkInfoViewController: UIViewController, PickerViewDelegate {
             self.pickerTrigger = .source_funds
             pickerVc.pickerViewDelegate = self
             pickerVc.pickerTitle.text = "Source Funds"
-            pickerVc.getMasterData(forModel: .funds, withSegmentID: nil)
+          pickerVc.getMasterData(forType: .funds, withSegmentID: nil)
         })
     }
     
@@ -276,7 +276,7 @@ class WorkInfoViewController: UIViewController, PickerViewDelegate {
     
     // MARK: - Pickerview Delegate
     
-    func pickerViewDelegate(didSelectPickerView pickerView: UIPickerView, withData data: PickerModel, andMasterModel masterModel: MasterModel) {
+    func pickerViewDelegate(didSelectPickerView pickerView: UIPickerView, withData data: PickerModel, andMasterModel masterModel: MasterDataType) {
         switch pickerTrigger! {
         case .occupation:
             occupationButton.setTitle(data.title, for: .normal)

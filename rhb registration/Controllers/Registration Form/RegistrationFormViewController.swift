@@ -130,7 +130,7 @@ class RegistrationFormViewController: UIViewController, PickerViewDelegate {
         self.present(pickerVc, animated: true, completion: {
             pickerVc.pickerViewDelegate = self
             pickerVc.pickerTitle.text = "Country"
-            pickerVc.getMasterData(forModel: .negara, withSegmentID: nil)
+          pickerVc.getMasterData(forType: .negara, withSegmentID: nil)
         })
     }
     
@@ -148,7 +148,7 @@ class RegistrationFormViewController: UIViewController, PickerViewDelegate {
         self.present(pickerVc, animated: true, completion: {
             pickerVc.pickerViewDelegate = self
             pickerVc.pickerTitle.text = "Mengenal RHB Dari"
-            pickerVc.getMasterData(forModel: .kenal, withSegmentID: nil)
+          pickerVc.getMasterData(forType: .kenal, withSegmentID: nil)
         })
     }
     
@@ -191,7 +191,7 @@ class RegistrationFormViewController: UIViewController, PickerViewDelegate {
     }
     
     // MARK: Picker View Delegate
-    func pickerViewDelegate(didSelectPickerView pickerView: UIPickerView, withData data: PickerModel, andMasterModel masterModel: MasterModel) {
+    func pickerViewDelegate(didSelectPickerView pickerView: UIPickerView, withData data: PickerModel, andMasterModel masterModel: MasterDataType) {
         if masterModel == .negara {
             formData.citizenship = data.title
             countryLabel.text = data.title

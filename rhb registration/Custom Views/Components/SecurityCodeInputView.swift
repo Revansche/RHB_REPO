@@ -134,7 +134,7 @@ class SecurityCodeInputView: UIView, UIKeyInput {
             code += (self.viewWithTag(index) as! UILabel).text!
           }
         }
-        delegate?.codeInputViewEditing(code)
+        delegate?.codeInputViewEditing?(code)
       }
       if (nextTag == 1) {
         (self.viewWithTag(prefixTagLine + nextTag))!.backgroundColor = UIColor.gray
@@ -152,8 +152,8 @@ class SecurityCodeInputView: UIView, UIKeyInput {
   var keyboardType: UIKeyboardType { get { return .numberPad } set { } }
 }
 
-protocol SecurityCodeInputViewDelegate {
+@objc protocol SecurityCodeInputViewDelegate {
   func codeInputView(_ codeInputView: SecurityCodeInputView, didFinishWithCode code: String)
   func codeInputViewDidBeginEditing()
-  func codeInputViewEditing(_ code:String)
+  @objc optional func codeInputViewEditing(_ code:String)
 }

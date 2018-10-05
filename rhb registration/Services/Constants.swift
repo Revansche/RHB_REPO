@@ -40,8 +40,12 @@ class Constants: NSObject {
     static let kLoginUrl = kBaseUrl + "auth/token"
     static let kSendFormDataUrl = kBaseUrl + "registration/form_data"
     static let kSendImageDataUrl = kBaseUrl + "registration/image_video_base64"
+    static let kCheckPhoneUrl = kBaseUrl + "registration/cek_ponsel"
+    static let kCheckEmailUrl = kBaseUrl + "registration/cek_email"
+    static let kRequestOTP = kBaseUrl + "registration/request_otp"
+    static let kCheckOTP = kBaseUrl + "registration/cek_otp"
     
-    static func getMasterURL(_ masterModel: MasterModel) -> String? {
+    static func getMasterURL(forType masterModel: MasterDataType) -> String {
         switch masterModel {
         case .negara:
             return kBaseUrl + kMasterNegara
@@ -78,7 +82,7 @@ class Constants: NSObject {
         }
     }
     
-    static func getPickersModel(fromArrayObject arrayObject: [Any], _ masterModel: MasterModel) -> [PickerModel]? {
+    static func getPickersModel(fromArrayObject arrayObject: [Any], _ masterModel: MasterDataType) -> [PickerModel] {
         switch masterModel {
         case .negara:
             let country = [Country](dictionaryArray: arrayObject as! [NSDictionary])
@@ -243,7 +247,7 @@ class Constants: NSObject {
     
 }
 
-enum MasterModel {
+enum MasterDataType {
     case negara, bank, agama, kota, provinsi, investasi, jabatan, kenal, rumah, marital, jobs, income, outcome, relationship, funds, bisnis
 }
 

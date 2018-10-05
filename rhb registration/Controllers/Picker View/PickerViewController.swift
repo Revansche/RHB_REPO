@@ -9,7 +9,7 @@
 import UIKit
 
 protocol PickerViewDelegate {
-    func pickerViewDelegate(didSelectPickerView pickerView: UIPickerView, withData data: PickerModel, andMasterModel masterModel: MasterModel)
+    func pickerViewDelegate(didSelectPickerView pickerView: UIPickerView, withData data: PickerModel, andMasterModel masterModel: MasterDataType)
 }
 
 class PickerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
@@ -20,7 +20,7 @@ class PickerViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     var pickerViewDelegate: PickerViewDelegate!
     var pickerModelSelected: PickerModel!
     
-    private var masterModel: MasterModel!
+    private var masterModel: MasterDataType!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,17 +63,17 @@ class PickerViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         self.dismiss(animated: true, completion: nil)
     }
     
-    func getMasterData(forModel model: MasterModel, withSegmentID segment: String?) {
-        self.masterModel = model
+    func getMasterData(forType type: MasterDataType, withSegmentID segment: String?) {
+        self.masterModel = type
         
-        var uri: String = Constants.getMasterURL(model)!
+      var uri: String = Constants.getMasterURL(forType: type)
         if let uriseg = segment {
             uri += uriseg
         }
 
         APIService.getMasterData(masterUrl: uri, param: nil) { (json, err) in
             if err == nil {
-                self.pickerDataSource = Constants.getPickersModel(fromArrayObject: json!, model)!
+                self.pickerDataSource = Constants.getPickersModel(fromArrayObject: json!, type)
                 self.pickerView.reloadAllComponents()
                 if self.pickerDataSource.count > 0 {
                     self.pickerModelSelected = self.pickerDataSource[0]

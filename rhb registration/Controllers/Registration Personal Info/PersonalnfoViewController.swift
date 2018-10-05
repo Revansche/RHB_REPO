@@ -128,7 +128,7 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
             self.pickerTrigger = .state
             pickerVc.pickerViewDelegate = self
             pickerVc.pickerTitle.text = "Province"
-            pickerVc.getMasterData(forModel: .provinsi, withSegmentID: nil)
+          pickerVc.getMasterData(forType: .provinsi, withSegmentID: nil)
         })
     }
     
@@ -140,7 +140,7 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
             self.pickerTrigger = .city
             pickerVc.pickerViewDelegate = self
             pickerVc.pickerTitle.text = "City"
-            pickerVc.getMasterData(forModel: .kota, withSegmentID: self.provinceSelected)
+          pickerVc.getMasterData(forType: .kota, withSegmentID: self.provinceSelected)
         })
     }
     
@@ -152,7 +152,7 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
             self.pickerTrigger = .religion
             pickerVc.pickerViewDelegate = self
             pickerVc.pickerTitle.text = "Religion"
-            pickerVc.getMasterData(forModel: .agama, withSegmentID: nil)
+          pickerVc.getMasterData(forType: .agama, withSegmentID: nil)
         })
     }
     
@@ -164,7 +164,7 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
             self.pickerTrigger = .relationship
             pickerVc.pickerViewDelegate = self
             pickerVc.pickerTitle.text = "Relationship"
-            pickerVc.getMasterData(forModel: .relationship, withSegmentID: nil)
+          pickerVc.getMasterData(forType: .relationship, withSegmentID: nil)
         })
     }
     
@@ -176,7 +176,7 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
             self.pickerTrigger = .bank
             pickerVc.pickerViewDelegate = self
             pickerVc.pickerTitle.text = "Bank Name"
-            pickerVc.getMasterData(forModel: .bank, withSegmentID: nil)
+          pickerVc.getMasterData(forType: .bank, withSegmentID: nil)
         })
     }
     
@@ -188,7 +188,7 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
             self.pickerTrigger = .bankcountry
             pickerVc.pickerViewDelegate = self
             pickerVc.pickerTitle.text = "Bank Country"
-            pickerVc.getMasterData(forModel: .negara, withSegmentID: nil)
+          pickerVc.getMasterData(forType: .negara, withSegmentID: nil)
         })
     }
     
@@ -200,7 +200,7 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
             self.pickerTrigger = .rdibank
             pickerVc.pickerViewDelegate = self
             pickerVc.pickerTitle.text = "Bank RDI"
-            pickerVc.getMasterData(forModel: .bank, withSegmentID: nil)
+          pickerVc.getMasterData(forType: .bank, withSegmentID: nil)
         })
     }
     
@@ -421,7 +421,7 @@ class PersonalnfoViewController: UIViewController, PickerViewDelegate {
     }
     
     // MARK: - Picker View
-    func pickerViewDelegate(didSelectPickerView pickerView: UIPickerView, withData data: PickerModel, andMasterModel masterModel: MasterModel) {
+    func pickerViewDelegate(didSelectPickerView pickerView: UIPickerView, withData data: PickerModel, andMasterModel masterModel: MasterDataType) {
         switch pickerTrigger! {
         case .state:
             provinceSelected = data.id

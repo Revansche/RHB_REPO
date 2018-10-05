@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable
+//@IBDesignable
 class RHBUnderlinedTextField: UITextField {
   
   //MARK: Placeholder vars
@@ -27,6 +27,12 @@ class RHBUnderlinedTextField: UITextField {
   fileprivate var placeholderInset = CGPoint(x: 0, y: 4) {
     didSet {
       layoutSubviews()
+    }
+  }
+  
+  override var text: String? {
+    didSet {
+      animateViewsForTextEntry()
     }
   }
   

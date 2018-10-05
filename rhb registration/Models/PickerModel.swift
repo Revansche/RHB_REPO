@@ -10,8 +10,8 @@ import UIKit
 
 class PickerModel: NSObject {
 
-    var id: String!
-    var title: String!
+    var id: String
+    var title: String
     
     init(id: String, title: String) {
         self.id = id

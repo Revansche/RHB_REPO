@@ -78,6 +78,8 @@
 		941B1B39215EA42900935F31 /* RHBPhotoFormContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B1B38215EA42900935F31 /* RHBPhotoFormContainerView.swift */; };
 		941B1B3B215EA6D200935F31 /* RHBCitizenshipContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 941B1B3A215EA6D200935F31 /* RHBCitizenshipContainerView.xib */; };
 		941B1B3D2160DCCD00935F31 /* RHBPhotoFormContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 941B1B3C2160DCCD00935F31 /* RHBPhotoFormContainerView.xib */; };
+		9429CAEB216632E00098BA75 /* SourceDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9429CAEA216632E00098BA75 /* SourceDataProvider.swift */; };
+		9429CAED2166369A0098BA75 /* SourceDataInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9429CAEC2166369A0098BA75 /* SourceDataInterface.swift */; };
 		94A659ED216269B900C50467 /* RHBFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A659EC216269B900C50467 /* RHBFormValidator.swift */; };
 		94A659F1216340A400C50467 /* RHBPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A659F0216340A400C50467 /* RHBPrimaryButton.swift */; };
 		94A659F421634F2C00C50467 /* PopUpSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A659F221634F2C00C50467 /* PopUpSelectionViewController.swift */; };
@@ -190,6 +192,8 @@
 		941B1B38215EA42900935F31 /* RHBPhotoFormContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHBPhotoFormContainerView.swift; sourceTree = "<group>"; };
 		941B1B3A215EA6D200935F31 /* RHBCitizenshipContainerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHBCitizenshipContainerView.xib; sourceTree = "<group>"; };
 		941B1B3C2160DCCD00935F31 /* RHBPhotoFormContainerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RHBPhotoFormContainerView.xib; sourceTree = "<group>"; };
+		9429CAEA216632E00098BA75 /* SourceDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceDataProvider.swift; sourceTree = "<group>"; };
+		9429CAEC2166369A0098BA75 /* SourceDataInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceDataInterface.swift; sourceTree = "<group>"; };
 		94A659EC216269B900C50467 /* RHBFormValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHBFormValidator.swift; sourceTree = "<group>"; };
 		94A659F0216340A400C50467 /* RHBPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RHBPrimaryButton.swift; sourceTree = "<group>"; };
 		94A659F221634F2C00C50467 /* PopUpSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpSelectionViewController.swift; sourceTree = "<group>"; };
@@ -459,6 +463,7 @@
 		4E86046B210980BC00019F77 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9429CAE9216631D00098BA75 /* Data Sources */,
 				4E86046C210980F700019F77 /* Religion.swift */,
 				4E86046E2109875E00019F77 /* Bank.swift */,
 				4E8604702109880A00019F77 /* Country.swift */,
@@ -512,6 +517,15 @@
 				941B1B3C2160DCCD00935F31 /* RHBPhotoFormContainerView.xib */,
 			);
 			path = "Group Container";
+			sourceTree = "<group>";
+		};
+		9429CAE9216631D00098BA75 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9429CAEA216632E00098BA75 /* SourceDataProvider.swift */,
+				9429CAEC2166369A0098BA75 /* SourceDataInterface.swift */,
+			);
+			path = "Data Sources";
 			sourceTree = "<group>";
 		};
 		94A659EB216269A800C50467 /* Form Validator */ = {
@@ -837,12 +851,14 @@
 				4E63BAFC210C1A40002239E5 /* FormData.swift in Sources */,
 				94155FCA215CE2620054BA25 /* RHBFormKTPViewController.swift in Sources */,
 				94A659F421634F2C00C50467 /* PopUpSelectionViewController.swift in Sources */,
+				9429CAEB216632E00098BA75 /* SourceDataProvider.swift in Sources */,
 				4E86048721098C0C00019F77 /* Relationship.swift in Sources */,
 				94D4E5C2214ECD3F00DB15BB /* RHBCheckBoxButton.swift in Sources */,
 				4E6A416320FF9D0900D9B2DE /* PersonalnfoViewController.swift in Sources */,
 				4E86047F21098AF100019F77 /* Marital.swift in Sources */,
 				4E6A415520FF671B00D9B2DE /* CustomView.swift in Sources */,
 				9418E75C2157ECA300AD3B7E /* PreRegisterFormViewController.swift in Sources */,
+				9429CAED2166369A0098BA75 /* SourceDataInterface.swift in Sources */,
 				4E86046D210980F700019F77 /* Religion.swift in Sources */,
 				4E5675FD20D92E0E00115457 /* RegisterNavigationViewController.swift in Sources */,
 				4E86047D21098AA700019F77 /* KepemilikanRumah.swift in Sources */,

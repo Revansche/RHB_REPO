@@ -54,6 +54,145 @@ class APIService: NSObject {
             completed(nil,InternetError.InternetNotReach)
         }
     }
+  
+  static func postPhoneNumberData(phoneNumber: String, completed: @escaping (_ result: NSDictionary?, _ error: Error?) -> ()) {
+    if APIService.isConnectedToInternet() {
+      let headers: HTTPHeaders = [
+        "Accept": "application/json",
+        "Authorization": Constants.kDefaultAuth
+      ]
+      let params: Parameters = [
+        "no_hp": phoneNumber
+      ]
+      let url = Constants.kCheckPhoneUrl
+      Alamofire.request(url, method: .post, parameters:params, headers: headers).validate().responseJSON { response in
+        switch response.result {
+        case .success (let json):
+          /* return sample
+           "status": "success",
+           "code": 200,
+           "data": {}
+           */
+          
+          if let data = json as? NSDictionary {
+            completed(data, nil)
+          }else{
+            completed(nil, InternetError.KeyNotMatch)
+          }
+          break
+        case .failure(let error):
+          completed(nil, error)
+          break
+        }
+      }
+    } else {
+      completed(nil,InternetError.InternetNotReach)
+    }
+  }
+  
+  static func postEmailData(email: String, completed: @escaping (_ result: NSDictionary?, _ error: Error?) -> ()) {
+    if APIService.isConnectedToInternet() {
+      let headers: HTTPHeaders = [
+        "Accept": "application/json",
+        "Authorization": Constants.kDefaultAuth
+      ]
+      let params: Parameters = [
+        "email": email
+      ]
+      let url = Constants.kCheckEmailUrl
+      Alamofire.request(url, method: .post, parameters:params, headers: headers).validate().responseJSON { response in
+        switch response.result {
+        case .success (let json):
+          /* return sample
+           "status": "success",
+           "code": 200,
+           "data": {}
+           */
+          
+          if let data = json as? NSDictionary {
+            completed(data, nil)
+          }else{
+            completed(nil, InternetError.KeyNotMatch)
+          }
+          break
+        case .failure(let error):
+          completed(nil, error)
+          break
+        }
+      }
+    } else {
+      completed(nil,InternetError.InternetNotReach)
+    }
+  }
+  static func requestOTP(withPhoneNumber phoneNumber: String, completed: @escaping (_ result: NSDictionary?, _ error: Error?) -> ()) {
+    if APIService.isConnectedToInternet() {
+      let headers: HTTPHeaders = [
+        "Accept": "application/json",
+        "Authorization": Constants.kDefaultAuth
+      ]
+      let params: Parameters = [
+        "no_hp": phoneNumber
+      ]
+      let url = Constants.kRequestOTP
+      Alamofire.request(url, method: .post, parameters:params, headers: headers).validate().responseJSON { response in
+        switch response.result {
+        case .success (let json):
+          /* return sample
+           "status": "success",
+           "code": 200,
+           "data": {}
+           */
+          
+          if let data = json as? NSDictionary {
+            completed(data, nil)
+          }else{
+            completed(nil, InternetError.KeyNotMatch)
+          }
+          break
+        case .failure(let error):
+          completed(nil, error)
+          break
+        }
+      }
+    } else {
+      completed(nil,InternetError.InternetNotReach)
+    }
+  }
+  static func verifyOTP(withPhoneNumber phoneNumber: String, securityCode: String, completed: @escaping (_ result: NSDictionary?, _ error: Error?) -> ()) {
+    if APIService.isConnectedToInternet() {
+      let headers: HTTPHeaders = [
+        "Accept": "application/json",
+        "Authorization": Constants.kDefaultAuth
+      ]
+      let params: Parameters = [
+        "no_hp": phoneNumber,
+        "kode_otp": securityCode
+      ]
+      let url = Constants.kCheckOTP
+      Alamofire.request(url, method: .post, parameters:params, headers: headers).validate().responseJSON { response in
+        switch response.result {
+        case .success (let json):
+          /* return sample
+           "status": "success",
+           "code": 200,
+           "data": {}
+           */
+          
+          if let data = json as? NSDictionary {
+            completed(data, nil)
+          }else{
+            completed(nil, InternetError.KeyNotMatch)
+          }
+          break
+        case .failure(let error):
+          completed(nil, error)
+          break
+        }
+      }
+    } else {
+      completed(nil,InternetError.InternetNotReach)
+    }
+  }
     
     static func postFormData(param: Parameters?, completed: @escaping (_ result: NSDictionary?, _ error: Error?) -> ()) {
         if APIService.isConnectedToInternet() {

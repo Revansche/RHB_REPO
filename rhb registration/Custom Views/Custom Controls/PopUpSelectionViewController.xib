@@ -16,6 +16,7 @@
                 <outlet property="contentView" destination="Z6V-Y9-XWM" id="sBI-ON-Iwd"/>
                 <outlet property="headerLabel" destination="QPu-rs-uLE" id="c1b-I9-bwb"/>
                 <outlet property="tableView" destination="mLn-aH-uQ9" id="1z7-et-yx5"/>
+                <outlet property="tableViewHeight" destination="IkY-Qh-zMK" id="uqd-aC-ayM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,7 +28,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6V-Y9-XWM" userLabel="Content View">
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59X-pd-Lpd" userLabel="Container View">
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59X-pd-Lpd" userLabel="Container View">
                             <rect key="frame" x="50" y="263.5" width="275" height="120"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWU-dP-FUb" userLabel="Header View">
@@ -47,7 +48,7 @@
                                         <constraint firstItem="QPu-rs-uLE" firstAttribute="centerY" secondItem="FWU-dP-FUb" secondAttribute="centerY" id="PbU-b0-KUO"/>
                                     </constraints>
                                 </view>
-                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mLn-aH-uQ9">
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mLn-aH-uQ9">
                                     <rect key="frame" x="0.0" y="40" width="275" height="40"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -59,6 +60,7 @@
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMx-Hh-q1M">
                                             <rect key="frame" x="0.0" y="0.0" width="275" height="40"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                             <state key="normal" title="Cancel">
                                                 <color key="titleColor" red="0.072495366559999996" green="0.41181098090000001" blue="0.69368489580000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
@@ -101,7 +103,7 @@
                     <viewLayoutGuide key="safeArea" id="WvV-sT-UJ4"/>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Z6V-Y9-XWM" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="DSX-sr-qq6"/>
                 <constraint firstItem="Z6V-Y9-XWM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="P7y-Ik-RRD"/>
